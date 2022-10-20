@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*********************/
+/* REUSABLE CSS */
+/*********************/
+.primary-heading {
+  font-size: 3rem;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  color: #113340;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tertiary-heading {
+  font-size: 1.5rem;
+  color: #113340;
+  margin-bottom: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+  /* line-height: 0.5rem; */
+}
+
+/*********************/
+/* SPECIFIC CSS */
+/*********************/
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* NAVIGATION */
+
+.main-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  /* nts: find out the actual gap size. 3.2 was just a guess */
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: red;
+  font-weight: ;
+  color: #113340;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* SECTION: HERO */
+
+.hero {
+  max-width: 120rem;
+  position: relative;
+}
+/* .hero {
+  position: relative;
+  text-align: center;
+} */
+
+.hero-img {
+  max-width: 100%;
+  margin-bottom: 8rem;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* SECTION: MOST POPULAR */
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: ;
+}
+
+.product-card {
+  width: 500px;
+  border: 3px solid #113340;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-img {
+  width: 100%;
+  border-bottom: 2px solid #113340;
+}
+
+.jacket-name {
+  margin-bottom: 1rem;
+  color: #113340;
+  font-size: 2rem;
+}
+
+.price {
+  color: #113340;
+  font-size: 1.5rem;
+}
+
+.card-text-container {
+  text-align: center;
+  padding: 2rem;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+/* FEATURES */
+
+/* .section-features {
+  width: 100%;
+} */
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 8rem;
+  background-color: aquamarine;
+  grid
+}
