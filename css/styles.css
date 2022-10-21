@@ -7,17 +7,79 @@
 /*********************/
 /* REUSABLE CSS */
 /*********************/
-.primary-heading {
-  font-size: 3rem;
-  color: #fff;
+
+/* CENTERED CONTAINER */
+.container {
+  max-width: 75rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+/* GRIDS */
+
+.grid{ 
+  display: grid;
+  gap: 7rem;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* MAIN NAVIGATION */
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  gap: 10rem;
+}
+
+.main-nav-list:first-child {
+  margin-right: auto;
+}
+
+.main-nav-list:last-child {
+  margin-left: auto;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #113340;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.secondary-heading {
+.main-nav-link:hover,
+.main-nav-link:active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.main-nav-icons {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.main-nav-icons a {
+  color: #113340;
+}
+
+/* HEADINGS */
+
+.primary-heading {
   font-size: 3rem;
   color: #113340;
-  text-align: center;
-  margin-bottom: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.secondary-heading {
+  font-size: 2rem;
+  color: #113340;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,8 +87,10 @@
   font-size: 1.5rem;
   color: #113340;
   margin-bottom: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
+
+/* STANDARD TEXT */
 
 .text {
   font-size: 1.5rem;
@@ -34,67 +98,91 @@
   color: #113340;
 }
 
+/* CTA */
+
+.cta-container {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.cta {
+  border: 2px solid #113340;
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-size: 2rem;
+  background-color: #3a606e0f;
+  text-decoration: none;
+  width: 198px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cta:link,
+.cta:visited {
+  color: #113340;
+}
+
 /*********************/
 /* SPECIFIC CSS */
 /*********************/
 
-/* HEADER */
+/* SECTION: HEADER */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  height: 8rem;
+  padding: 0 2rem;
 }
 
-/* NAVIGATION */
-
-.main-nav-list {
-  display: flex;
-  gap: 3.2rem;
-  list-style: none;
-  /* nts: find out the actual gap size. 3.2 was just a guess */
+.logo {
+  height: 6rem;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
-  text-decoration: none;
-  display: inline-block;
-  color: red;
-  color: #113340;
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* SECTION HEADER--NAVIGATION */
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: purple;
-  text-decoration: underline;
-}
+
 
 /* SECTION: HERO */
 
-.hero {
-  max-width: 120rem;
-  position: relative;
+#section-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  margin-bottom: 9rem;
 }
-/* .hero {
-  position: relative;
+
+.hero-container {
+  display: flex;
+  align-items:flex-start
+  width: 90%;
+  height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  /* justify-content: center; */
+ }
+
+.hero-text {
+  margin:40px 0;
+  /* background-color: aquamarine; */
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* SECTION: MOST POPULAR JACKETS */
+
+.popular-s-heading {
+  margin-bottom: 7rem;
   text-align: center;
-} */
-
-.hero-img {
-  max-width: 100%;
-  margin-bottom: 8rem;
 }
-
-.hero-text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-/* SECTION: MOST POPULAR */
 
 .cards-container {
   display: flex;
@@ -105,17 +193,23 @@ header {
 }
 
 .product-card {
-  width: 500px;
-  border: 3px solid #113340;
+  width: 25rem;
+  border: 3px solid #3a606e;
   border-radius: 6px;
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card-img {
   width: 100%;
   border-bottom: 2px solid #113340;
+  padding: 1.5rem;
+}
+
+.card-text-container {
+  text-align: center;
+  padding: 2rem;
 }
 
 .jacket-name {
@@ -129,24 +223,22 @@ header {
   font-size: 1.5em;
 }
 
-.card-text-container {
-  text-align: center;
-  padding: 2rem;
-}
-
 /* SECTION: FEATURES */
 
-.features-container {
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: auto auto;
-  /* background-color: bisque; */
-  margin: 0 auto;
-  max-width: 1200px;
+.features-sec-heading {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.feature-text {
   margin-bottom: 3rem;
 }
 
-/* SECTION FOOTER */
+.feature-img {
+  width: 100%;
+}
+
+/* SECTION: FOOTER */
 
 footer {
   background-color: #3a606e;
@@ -166,8 +258,6 @@ footer {
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
-
-  /* line-height: 2rem; */
 }
 
 .social-icon-text {
