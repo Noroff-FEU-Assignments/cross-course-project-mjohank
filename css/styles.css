@@ -17,7 +17,7 @@
 
 /* GRIDS */
 
-.grid{ 
+.grid {
   display: grid;
   gap: 7rem;
 }
@@ -33,15 +33,16 @@
   list-style: none;
   text-align: center;
   gap: 10rem;
+  /* margin-left: 10rem; */
 }
 
-.main-nav-list:first-child {
+/* .main-nav-list:first-child {
   margin-right: auto;
 }
 
 .main-nav-list:last-child {
   margin-left: auto;
-}
+} */
 
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -70,24 +71,25 @@
 
 /* HEADINGS */
 
-.primary-heading {
-  font-size: 3rem;
+.primary-heading,
+.secondary-heading,
+.tertiary-heading {
   color: #113340;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.primary-heading {
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
 .secondary-heading {
   font-size: 2rem;
-  color: #113340;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tertiary-heading {
   font-size: 1.5rem;
-  color: #113340;
   margin-bottom: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 /* STANDARD TEXT */
@@ -103,7 +105,6 @@
 .cta-container {
   display: flex;
   gap: 2rem;
-  
 }
 
 .cta {
@@ -119,8 +120,16 @@
 }
 
 .cta:link,
-.cta:visited {
+.cta:visited,
+.cta:hover,
+.cta:active {
   color: #113340;
+}
+
+.cta:hover,
+.cta:active {
+  color: #fff;
+  background-color: #113340;
 }
 
 /*********************/
@@ -141,46 +150,38 @@ header {
   height: 6rem;
 }
 
-/* SECTION HEADER--NAVIGATION */
-
-
-
 /* SECTION: HERO */
 
 #section-hero {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url(/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
-  margin-bottom: 9rem;
+  margin-bottom: 8rem;
 }
 
 .hero-container {
+  background-color: rgba(250, 235, 215, 0.347);
   display: flex;
-  align-items:flex-start
-  width: 90%;
-  height: 100%;
+  /* width: 90%; */
+  /* height: 100%; */
   max-width: 1300px;
   margin: 0 auto;
-  /* justify-content: center; */
- }
-
-.hero-text {
-  margin:40px 0;
-  /* background-color: aquamarine; */
 }
 
-.hero-text p {
-  font-size: 1rem;
-  margin-bottom: 3rem;
+.hero-text-container {
+  margin: 3rem 0;
+}
+
+.hero-text {
+  margin: 2rem 0;
 }
 
 /* SECTION: MOST POPULAR JACKETS */
 
-.popular-s-heading {
-  margin-bottom: 7rem;
+.popular-sec-heading {
+  margin-bottom: 6rem;
   text-align: center;
 }
 
@@ -190,6 +191,7 @@ header {
   gap: 20px;
   margin: 0 auto;
   justify-content: center;
+  max-width: 80%;
 }
 
 .product-card {
@@ -224,6 +226,10 @@ header {
 }
 
 /* SECTION: FEATURES */
+
+.section-features {
+  margin-bottom: 8rem;
+}
 
 .features-sec-heading {
   margin-bottom: 8rem;
