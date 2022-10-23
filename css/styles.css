@@ -279,7 +279,6 @@ body {
 /****************************/
 
 .section-features {
-  background-color: beige;
   margin-bottom: 8rem;
 }
 
@@ -289,7 +288,6 @@ body {
 }
 
 .features-container {
-  background-color: deepskyblue;
   max-width: 75rem;
   padding: 0 2rem;
   margin: 0 auto;

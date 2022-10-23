@@ -46,10 +46,6 @@
 /****************************/
 
 @media screen and (max-width: 60rem) {
-  .section-header {
-    position: relative;
-  }
-
   .logo {
     margin: 1rem auto;
   }
@@ -76,5 +72,20 @@
     display: block;
     font-size: 2rem;
     margin-right: 2rem;
+  }
+}
+
+/****************************/
+/* BREAKPOINT AT 38 REM / 608PX */
+/****************************/
+
+@media screen and (max-width: 38rem) {
+  .section-footer {
+    max-width: 100%;
+  }
+
+  .footer-flex-container {
+    flex-direction: column;
+    height: 100%;
   }
 }
