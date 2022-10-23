@@ -12,8 +12,6 @@ most popular cards:container
 
 flexwrap wrap - done
 
-prod card:flex 1 1 300px
-
 heroimg backgr pos left -1000px center
 
 chrome extension: web developer

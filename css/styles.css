@@ -199,7 +199,7 @@ body {
 
 .section-popular {
   margin-bottom: 8rem;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .popular-sec-heading {
@@ -216,7 +216,7 @@ body {
 }
 
 .product-card {
-  width: 20rem;
+  width: 15rem;
   border-radius: 6px;
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
