@@ -5,17 +5,9 @@
 /* 1200px */
 
 @media screen and (max-width: 75rem) {
-  .section-popular {
-    max-width: 56rem;
-  }
-
-  .section-features {
-    max-width: 56rem;
-  }
-
-  .features-container {
-    gap: 2rem;
-    max-width: 60rem;
+  .container1200px {
+    max-width: 40rem;
+    /* padding: 0; */
   }
 
   .logo {
@@ -32,6 +24,17 @@
 
   .text {
     font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 9rem;
+    padding: 0.5rem;
+  }
+
+  .features-container {
+    gap: 2rem;
   }
 }
 
