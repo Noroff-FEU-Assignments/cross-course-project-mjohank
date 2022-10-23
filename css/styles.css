@@ -56,8 +56,14 @@ body {
   gap: 2rem;
 }
 
+.main-navigation {
+  display: flex;
+  gap: 3rem;
+}
+
 .main-nav-logo {
   height: 6rem;
+
   /* margin: 1rem 4rem 1rem 0; */
   /* margin-right: 5rem; */
 }
@@ -103,11 +109,6 @@ body {
   color: #113340;
 }
 
-/****************************/
-/* CHECKBOX HACK */
-/****************************/
-
-.hamburger-checkbox,
 .hamburger-icon {
   display: none;
 }

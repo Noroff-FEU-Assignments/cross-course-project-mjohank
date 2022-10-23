@@ -3,7 +3,7 @@
 /******************************/
 
 /****************************/
-/* BREAKPOINT AT 75 REM */
+/* BREAKPOINT AT 75 REM / 1200PX*/
 /****************************/
 
 @media screen and (max-width: 75rem) {
@@ -42,50 +42,16 @@
 }
 
 /****************************/
-/* BREAKPOINT AT 48 REM */
+/* BREAKPOINT AT 60 REM / 960PX */
 /****************************/
 
 @media screen and (max-width: 60rem) {
-  .hamburger-icon {
-    display: inline-block;
-    color: #113340;
-    font-size: 2rem;
-    padding: 3rem;
-  }
-
-  .main-nav-list {
-    display: block;
-  }
-
   .section-header {
     position: relative;
   }
 
-  .main-nav {
-    background-color: #fff;
-    text-align: center;
-    width: 15rem;
-    display: none;
-    position: absolute;
-  }
-
   .logo {
     margin: 1rem auto;
-  }
-
-  .main-nav-icons {
-    justify-content: center;
-    margin: 1rem auto;
-  }
-
-  .main-nav a {
-    display: block;
-    padding-bottom: 1rem;
-    width: 100%;
-  }
-
-  .hamburger-checkbox:checked ~ .main-nav {
-    display: block;
   }
 
   .features-container {
@@ -99,5 +65,16 @@
   .cards-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .main-nav-list,
+  .main-nav-icons {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    font-size: 2rem;
+    margin-right: 2rem;
   }
 }
