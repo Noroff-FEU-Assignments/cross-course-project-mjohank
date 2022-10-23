@@ -106,8 +106,19 @@ body {
   color: #113340;
 }
 
+/****************************/
+/* Temporary hamburger menu icon */
+/****************************/
+
 .hamburger-icon {
   display: none;
+}
+
+.hamburger-icon a:link,
+.hamburger-icon a:visited,
+.hamburger-icon a:hover,
+.hamburger-icon a:active {
+  color: #113340;
 }
 
 /****************************/

@@ -73,13 +73,6 @@
     font-size: 2rem;
     margin-right: 2rem;
   }
-
-  .hamburger-icon:link,
-  .hamburger-icon:visited,
-  .hamburger-icon:hover,
-  .hamburger-icon:active {
-    color: #113340;
-  }
 }
 
 /****************************/
@@ -94,6 +87,7 @@
   .footer-flex-container {
     flex-direction: column;
     height: 100%;
+    gap: 2rem;
   }
 
   .section-hero .cta {
