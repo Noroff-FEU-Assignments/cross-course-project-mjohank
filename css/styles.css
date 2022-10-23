@@ -62,10 +62,7 @@ body {
 }
 
 .main-nav-logo {
-  height: 6rem;
-
-  /* margin: 1rem 4rem 1rem 0; */
-  /* margin-right: 5rem; */
+  /* height: 6rem; */
 }
 
 .main-nav-list {
@@ -220,7 +217,6 @@ body {
 
 .section-popular {
   margin-bottom: 8rem;
-  background-color: aquamarine;
 }
 
 .popular-sec-heading {
@@ -237,7 +233,6 @@ body {
 }
 
 .product-card {
-  background-color: palevioletred;
   width: 15rem;
   border-radius: 6px;
   text-align: center;
