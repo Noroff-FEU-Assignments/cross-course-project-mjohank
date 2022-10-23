@@ -22,7 +22,11 @@
 
   .main-nav-list {
     gap: 1rem;
-    flex: 1;
+    flex: 0.8;
+  }
+
+  .main-nav-link:link {
+    font-size: 1rem;
   }
 
   .cta {
