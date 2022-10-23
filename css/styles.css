@@ -3,13 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 
 /*********************/
 /* REUSABLE CSS */
 /*********************/
 
 /* CENTERED CONTAINER */
-.container {
+.container1200px {
   max-width: 75rem;
   padding: 0 2rem;
   margin: 0 auto;
@@ -19,7 +22,6 @@
 
 .grid {
   display: grid;
-  gap: 7rem;
 }
 
 .grid--2-col {
@@ -29,7 +31,7 @@
 /* SECTION: HEADER */
 
 .section-header {
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
   position: sticky;
   top: 0;
@@ -37,27 +39,26 @@
 
 /* MAIN NAVIGATION */
 
-.logo {
-  height: 6rem;
-  margin: 1rem 4rem 1rem 0;
-}
-
-.main-nav {
+.main-nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
   padding: 0 2rem;
+  gap: 2rem;
+}
+
+.main-nav-logo {
+  height: 6rem;
+  /* margin: 1rem 4rem 1rem 0; */
+  /* margin-right: 5rem; */
 }
 
 .main-nav-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
-  gap: 2rem;
-  max-width: 100vw;
-  flex: 2;
+  gap: 5rem;
+  max-width: 100%;
 }
 
 .main-nav-link:link,
@@ -86,7 +87,7 @@
   display: flex;
   gap: 1.6rem;
   font-size: 1.5rem;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .main-nav-icons a {
@@ -141,12 +142,12 @@
 
 .cta {
   border: 2px solid #113340;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 6px;
   font-size: 2rem;
   background-color: #3a606e0f;
   text-decoration: none;
-  width: 198px;
+  width: 11rem;
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -176,12 +177,13 @@
   background-image: url(/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-bottom: 6rem;
 }
 
 .hero-container {
   display: flex;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -197,6 +199,7 @@
 
 .section-popular {
   margin-bottom: 8rem;
+  background-color: aquamarine;
 }
 
 .popular-sec-heading {
@@ -206,15 +209,14 @@
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.2rem;
   margin: 0 auto;
   justify-content: center;
-  max-width: 63rem;
 }
 
 .product-card {
-  width: 25rem;
-  border: 3px solid #3a606e9a;
+  width: 20rem;
   border-radius: 6px;
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
@@ -234,8 +236,8 @@
 
 .card-img {
   width: 100%;
-  border-bottom: 2px solid #3a606e;
   padding: 1rem;
+  border-radius: 6px;
 }
 
 .card-text-container {
@@ -244,9 +246,11 @@
 }
 
 .jacket-name {
+  border-top: 2px solid #3a606e;
   margin-bottom: 1rem;
   color: #113340;
   font-size: 2rem;
+  padding-top: 1rem;
 }
 
 .price {
@@ -257,6 +261,7 @@
 /* SECTION: FEATURES */
 
 .section-features {
+  background-color: beige;
   margin-bottom: 8rem;
 }
 
@@ -265,18 +270,26 @@
   text-align: center;
 }
 
+.features-container {
+  gap: 7rem;
+}
+
+.features-text-box {
+}
+
 .feature-text {
   margin-bottom: 3rem;
 }
 
 .feature-img {
   width: 100%;
+  max-width: 100%;
 }
 
 /* SECTION: FOOTER */
 
 .section-footer {
-  max-width: 100vw;
+  max-width: 1920vw;
   background-color: #3a606e;
   color: #fff;
 }
@@ -317,56 +330,4 @@
   font-size: 1rem;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.1rem;
-}
-
-/******************************/
-/* MEDIA QUERIES */
-/******************************/
-
-@media screen and (max-width: 1200px) {
-  .hamburger-icon {
-    display: inline-block;
-    color: #113340;
-    font-size: 2rem;
-    padding: 3rem;
-  }
-
-  .main-nav-list {
-    display: block;
-  }
-
-  .section-header {
-    position: relative;
-  }
-
-  .main-nav {
-    background-color: #fff;
-    text-align: center;
-    width: 15rem;
-    display: none;
-    position: absolute;
-    ba
-  }
-
-  .logo {
-    margin: 1rem auto;
-  }
-
-  .main-nav-icons {
-    justify-content: center;
-    margin: 1rem auto;
-  }
-
-  .main-nav a {
-    display: block;
-    padding-bottom: 1rem;
-    width: 100%;
-  }
-
-  .main-nav {
-  }
-
-  .hamburger-checkbox:checked ~ .main-nav {
-    display: block;
-  }
 }

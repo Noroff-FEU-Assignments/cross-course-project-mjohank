@@ -1,0 +1,95 @@
+/******************************/
+/* MEDIA QUERIES */
+/******************************/
+
+/* 1200px */
+
+@media screen and (max-width: 75rem) {
+  .section-popular {
+    max-width: 56rem;
+  }
+
+  .section-features {
+    max-width: 56rem;
+  }
+
+  .features-container {
+    gap: 1rem;
+    max-width: 60rem;
+  }
+
+  .logo {
+    margin-right: 2rem;
+  }
+
+  .main-nav-container {
+  }
+
+  .main-nav-list {
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+/* 768 might need adjusting */
+
+/* @media screen and (max-width: 48rem) {
+  .hamburger-icon {
+    display: inline-block;
+    color: #113340;
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .main-nav-list {
+    display: block;
+  }
+
+  .section-header {
+    position: relative;
+  }
+
+  .main-nav {
+    background-color: #fff;
+    text-align: center;
+    width: 15rem;
+    display: none;
+    position: absolute;
+  }
+
+  .logo {
+    margin: 1rem auto;
+  }
+
+  .main-nav-icons {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .main-nav a {
+    display: block;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  .hamburger-checkbox:checked ~ .main-nav {
+    display: block;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-container {
+    justify-content: center;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
