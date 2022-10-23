@@ -90,8 +90,14 @@
     gap: 2rem;
   }
 
-  .section-hero .cta {
+  .section-hero .cta:link,
+  .section-hero .cta:visited {
     color: #fff;
     background-color: #113340;
+  }
+
+  .section-hero .cta:hover,
+  .section-hero .cta:active {
+    background-color: #3a606e;
   }
 }
