@@ -167,7 +167,7 @@ body {
 .tertiary-heading {
   color: #113340;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .primary-heading {
@@ -196,7 +196,7 @@ body {
 }
 
 .text-smaller {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #113340;
 }
@@ -241,6 +241,19 @@ body {
   background-color: #113340;
 }
 
+.cta-dark {
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 12rem;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  background-color: #113340;
+}
 /****************************/
 /* SPECIFIC CSS */
 /****************************/
@@ -457,19 +470,23 @@ body {
 /******************************************************/
 
 .about-primary-heading {
-  margin-top: 6rem;
-  margin-bottom: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
   text-align: center;
 }
 
-.who {
-  background-image: url(../images/about1.jpg);
+.about-grid-img-container {
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 6px;
+}
+
+.about-img-1 {
+  background-image: url(../images/about1.jpg);
 }
 
 .about {
-  gap: 4rem;
+  gap: 5rem;
   margin-bottom: 16rem;
 }
 
@@ -477,10 +494,8 @@ body {
   margin-bottom: 2rem;
 }
 
-.what {
+.about-img-2 {
   background-image: url(../images/about2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /******************************************************/
@@ -549,4 +564,118 @@ body {
 .contact-btn:active {
   color: #fff;
   background-color: #113340;
+}
+
+/******************************************************/
+/* HEMSEDAL PAGE */
+/******************************************************/
+
+.product-info {
+  display: flex;
+  gap: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.product-image-and-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-img {
+  max-width: 500px;
+  max-height: 450px;
+  margin-bottom: 3rem;
+  box-shadow: 10px 10px 20px #3a606e66;
+  border-radius: 6px;
+}
+
+.product-text {
+  max-width: 500px;
+  font-size: 1.1rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.detail-text {
+  border-bottom: 2px solid #113340;
+  max-width: 41rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.product-price {
+  font-weight: 400;
+}
+
+.detail-sizes {
+}
+
+.product-sec-heading {
+  margin-bottom: 1rem;
+}
+
+.size-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.size-container {
+  border-bottom: 2px solid #113340;
+  max-width: 41rem;
+  margin-bottom: 3rem;
+}
+
+.size-option {
+  border: 2px solid #113340;
+  border-radius: 6px;
+  /* width: 3rem; */
+  /* height: 3rem; */
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.size-option:hover,
+.size-option:active {
+  color: #fff;
+  background-color: #113340;
+}
+
+.prod-cta:link,
+.prod-cta:visited {
+  max-width: 41rem;
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /* width: 12rem; */
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  background-color: #113340;
+}
+
+.prod-cta:hover,
+.prod-cta:active {
+  max-width: 41rem;
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /* width: 12rem; */
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+  background-color: #3a606e0f;
+  font-weight: 500;
 }

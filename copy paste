@@ -103,5 +103,13 @@
 </html>
 
 /******************************************************/ /* CONTACT PAGE */
-/*****************************************************/ xd bredde på container
+/***************************************************** / xd bredde på container
 med produkter (3 cards) = 1640px/102,5rem bredde på card er w536 x h617
+
+<!-- BREADCRUMBS -->
+
+<div class="breadcrumbs text-small">
+  <a href="index.html">Home</a>
+  <p>></p>
+  <p class="current-crumb">Contact</p>
+</div>
