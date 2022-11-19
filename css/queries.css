@@ -6,6 +6,8 @@
 /* BREAKPOINT AT 75 REM / 1200PX*/
 /****************************/
 
+/* homepage */
+
 @media screen and (max-width: 75rem) {
   .container {
     max-width: 40rem;

@@ -21,6 +21,16 @@ body {
   margin: 0 auto;
 }
 
+.container-large {
+  max-width: 950rem;
+  margin: 0 auto;
+}
+
+.container-narrow {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
 /****************************/
 /* GRIDS */
 /****************************/
@@ -126,6 +136,29 @@ body {
 }
 
 /****************************/
+/* BREADCRUMBS */
+/****************************/
+
+.breadcrumbs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited,
+.breadcrumbs a:hover,
+.breadcrumbs a:link {
+  text-decoration: none;
+  color: #113340;
+}
+
+.current-crumb {
+  text-decoration: underline;
+}
+
+/****************************/
 /* HEADINGS */
 /****************************/
 
@@ -134,12 +167,13 @@ body {
 .tertiary-heading {
   color: #113340;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .primary-heading {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
+  /* margin-top: 3rem; */
 }
 
 .secondary-heading {
@@ -157,6 +191,18 @@ body {
 
 .text {
   font-size: 1.5rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.text-smaller {
+  font-size: 1rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.text-small {
+  font-size: 0.9rem;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #113340;
 }
@@ -199,9 +245,9 @@ body {
 /* SPECIFIC CSS */
 /****************************/
 
-/****************************/
+/******************************************************/
 /* HOMEPAGE */
-/****************************/
+/******************************************************/
 
 /****************************/
 /* SECTION: HERO */
@@ -243,7 +289,7 @@ body {
   text-align: center;
 }
 
-.cards-container {
+.most-popular-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 3.5rem;
@@ -252,7 +298,7 @@ body {
 }
 
 .product-card {
-  width: 15rem;
+  width: 22rem;
   border-radius: 6px;
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
@@ -370,4 +416,137 @@ body {
   letter-spacing: 0.1rem;
 }
 
+/******************************************************/
 /* COLLECTION PAGE */
+/******************************************************/
+
+.collection-hero {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+  height: 400px;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.collection-hero-text-container {
+  flex: 1;
+  padding: 3rem;
+}
+
+.collection-hero-img-container {
+  background-image: url(../images/collection-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  border-radius: 6px 0 0 6px;
+}
+
+.collection-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.collection-cards-container {
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+/******************************************************/
+/* ABOUT PAGE */
+/******************************************************/
+
+.about-primary-heading {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.who {
+  background-image: url(../images/about1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about {
+  gap: 4rem;
+  margin-bottom: 16rem;
+}
+
+.about-sec-heading {
+  margin-bottom: 2rem;
+}
+
+.what {
+  background-image: url(../images/about2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/******************************************************/
+/* CONTACT PAGE */
+/******************************************************/
+.main-container {
+  margin-top: 6rem;
+}
+
+.contact-prim-heading {
+  margin-bottom: 5rem;
+}
+
+.contact-text {
+  margin-bottom: 2rem;
+}
+
+.contact-hours-container {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+
+.contact-cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.contact-block {
+  flex: 1;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #113340;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.contact-btn {
+  border: 2px solid #113340;
+  border-radius: 6px;
+  background-color: #e2ecf0;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.contact-btn:link,
+.contact-btn:visited {
+  text-decoration: none;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.contact-btn:hover,
+.contact-btn:active {
+  color: #fff;
+  background-color: #113340;
+}
