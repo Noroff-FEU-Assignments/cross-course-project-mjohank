@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pushing the Comfort zone with high quality, comfortable rain wear"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d47c883f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+    <title>Checkout | Rainydays</title>
+  </head>
+
+  <body>
+    <!-- SECTION: HEADER -->
+
+    <header class="section-header">
+      <nav class="main-nav-container">
+        <!-- MAIN NAV LOGO -->
+        <a href="index.html">
+          <img
+            src="images/RainyDays_Logo-dark.png"
+            alt="Rainydays logo"
+            class="main-nav-logo"
+        /></a>
+
+        <!-- MAIN NAV LIST -->
+
+        <ul class="main-nav-list">
+          <li><a href="index.html" class="main-nav-link">Home</a></li>
+          <li>
+            <a href="collection.html" class="main-nav-link">Collection</a>
+          </li>
+          <li><a href="about.html" class="main-nav-link">About</a></li>
+          <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+        </ul>
+
+        <!-- MAIN NAV ICONS -->
+        <ul class="main-nav-icons">
+          <li class="main-nav-icon">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="main-nav-icon">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="main-nav-icon">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </li>
+          <li class="main-nav-icon">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+
+        <!-- The following <div> is a placeholder for the checkbox hack menu. I wrote the code for the page desktop first, before I saw the part about it being better to design mobile first. I couldn't figure out how to reverse engineer the checkbox hack that was shown as mobile first in the tutorial. I only did things this way because the Additional Comments in the Module Assignment text seemed to allow for a temporary "solution" of this sort   -->
+
+        <div class="hamburger-icon">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BREADCRUMBS -->
+
+    <div class="breadcrumbs text-small">
+      <a href="../index.html">Home</a>
+      <p>></p>
+      <a href="../collection.html">Collection</a>
+      <p>></p>
+      <a href="/products/Hemsedal.html">Hemsedal</a>
+      <p>></p>
+      <a href="cart.html">Cart</a>
+      <p>></p>
+      <p class="current-crumb">Checkout</p>
+    </div>
+
+    <main class="container-narrowest">
+
+      <h1 class="checkout-main-heading primary-heading">Checkout</h1>
+
+      <!-- SHIPPING SECTION -->
+
+      <section class="shipping-section checkout-details">
+
+        <h2 class="checkout-sec-heading secondary-heading">Shipping adress</h2>
+
+        <div class="form-flex">
+          
+            <div class="form-flex-item">
+              <label for="first-name" ">First name</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter first name" required
+              />
+            </div>
+
+            <div class="form-flex-item">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Enter last name" required/>
+            </div>
+          
+
+            <div class="form-flex-item">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="Enter address" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="zip-code">Zip code</label>
+              <input type="text" id="zip-code" placeholder="Enter zip code" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Enter city" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="country">Country</label>
+              <input type="text" id="country" placeholder="Enter country" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="phone">Phone number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter phone number" required
+              />
+            </div>
+
+            <div class="form-flex-item">
+              <label for="mail">Email address</label>
+              <input type="email" id="mail" placeholder="Enter email address" required/>
+            </div>
+        </div>
+      </section>
+
+      <!-- PAYMENT SECTION -->
+
+      <section class="payment-section checkout-details">
+
+        <h2 class="checkout-sec-heading secondary-heading">Payment details</h2>
+
+        <div class="form-flex">
+        <div class="form-flex-item">
+          <label for="card">Card type</label>
+          <select name="card-type" id="card-type" required>
+            <option value="choose-card">Choose card type</option>
+            <option value="visa">Visa</option>
+            <option value="visa">Mastercard</option>
+            <option value="visa">Diners</option>
+            <option value="visa">Monopoly card</option>
+          </select>
+        </div>
+
+        <div class="form-flex-item">
+          <label for="card-number">Card number</label>
+          <input
+            type="card-number"
+            name="card-number"
+            id="card-number"
+            placeholder="Enter card number" required
+          />
+        </div>
+
+        <div class="form-flex-item">
+          <label for="cardholders-name">Cardholder's name</label>
+          <input
+            type="text"
+            name="cardholders-name"
+            id="cardhoders-name"
+            placeholder="Enter Cardholder's name" required
+          />
+        </div>
+
+        <div class="form-flex-item">
+          <label for="exp-date">Expiration date</label>
+          <input
+            type="date"
+            name="exp-date"
+            id="exp-date"
+            placeholder="Enter expiration date" required
+          />
+        </div>
+
+        <div class="form-flex-item">
+          <label for="cvc-cvv">CVC/CVV</label>
+          <input
+            type="password"
+            name="cvc-cvv"
+            id="cvc-cvv"
+            placeholder="Enter CVC/CVV" required
+          />
+        </div>
+      </section>
+
+      <!-- Placeholder for a submit button -->
+      <div class="confirmation container-narrowest">
+        <a href="checkout-success.html" class="confirmation-btn text"
+          >Confirm and pay</a
+        >
+      </div>
+
+
+    </main>
+
+
+    <!-- SECTION: FOOTER -->
+
+    <footer class="section-footer">
+      <div class="footer-flex-container">
+        <a href="index.html"
+          ><img
+            src="/images/RainyDays_Logo-light.png"
+            alt="logo"
+            class="footer-logo"
+        /></a>
+
+        <div class="social-icon-container">
+          <p class="social-icon-text">Follow us:</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" class="social-icon"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/" class="social-icon"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="social-icon"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy Rainydays 2022</p>
+    </footer>
+  </body>
+</html>

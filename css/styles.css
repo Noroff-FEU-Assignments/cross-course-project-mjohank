@@ -1,0 +1,940 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+/****************************/
+/* REUSABLE CSS */
+/****************************/
+
+/****************************/
+/* CENTERED CONTAINER */
+/****************************/
+
+.container {
+  max-width: 75rem;
+  /* padding: 0 2rem; */
+  margin: 0 auto;
+}
+
+.container-narrow {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.container-narrowest {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/****************************/
+/* GRIDS */
+/****************************/
+
+.grid {
+  display: grid;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/****************************/
+/* SECTION: HEADER */
+/****************************/
+
+.section-header {
+  width: 100vw;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+/****************************/
+/* MAIN NAVIGATION */
+/****************************/
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 3rem;
+}
+
+.main-nav-logo {
+  height: 6rem;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 5rem;
+  max-width: 100%;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #113340;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  text-decoration: underline;
+}
+
+.main-nav-link.current:link,
+.main-nav-link.current:visited,
+.main-nav-link.current:hover,
+.main-nav-link.current:active {
+  text-decoration: underline;
+}
+
+.main-nav-icons {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.5rem;
+  /* margin-left: 4rem; */
+}
+
+.main-nav-icons a {
+  color: #113340;
+}
+
+/****************************/
+/* Temporary hamburger menu icon */
+/****************************/
+
+.hamburger-icon {
+  display: none;
+}
+
+.hamburger-icon a:link,
+.hamburger-icon a:visited,
+.hamburger-icon a:hover,
+.hamburger-icon a:active {
+  color: #113340;
+}
+
+/****************************/
+/* BREADCRUMBS */
+/****************************/
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited,
+.breadcrumbs a:hover,
+.breadcrumbs a:link {
+  text-decoration: none;
+  color: #113340;
+}
+
+.current-crumb {
+  text-decoration: underline;
+}
+
+/****************************/
+/* HEADINGS */
+/****************************/
+
+.primary-heading,
+.secondary-heading,
+.tertiary-heading {
+  color: #113340;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.primary-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  /* margin-top: 3rem; */
+}
+
+.secondary-heading {
+  font-size: 2rem;
+}
+
+.tertiary-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/****************************/
+/* STANDARD TEXT */
+/****************************/
+
+.text {
+  font-size: 1.5rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.text-smaller {
+  font-size: 1.2rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.text-small {
+  font-size: 0.9rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+/****************************/
+/* CTA */
+/****************************/
+
+.cta-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.cta {
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  background-color: #3a606e0f;
+  text-decoration: none;
+  width: 9rem;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+/* .cta:link,
+.cta:visited {
+  color: #113340;
+} */
+
+.cta:hover,
+.cta:active {
+  color: #fff;
+  background-color: #113340;
+}
+
+.cta-dark:link,
+.cta-dark:visited {
+  border: 2px solid #113340;
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  background-color: #113340;
+}
+
+.cta-dark:hover,
+.cta-dark:active {
+  color: #113340;
+  background-color: #3a606e0f;
+}
+/****************************/
+/* SPECIFIC CSS */
+/****************************/
+
+/******************************************************/
+/* HOMEPAGE */
+/******************************************************/
+
+/****************************/
+/* SECTION: HERO */
+/****************************/
+
+.section-hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url(/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 6rem;
+}
+
+.hero-container {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero-text-container {
+  margin: 3rem 0 0 3rem;
+}
+
+.hero-text {
+  margin: 2rem 0;
+}
+/****************************/
+/* SECTION: MOST POPULAR JACKETS */
+/****************************/
+
+.section-popular {
+  margin-bottom: 8rem;
+}
+
+.popular-sec-heading {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.most-popular-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-card {
+  width: 22rem;
+  border-radius: 6px;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 10px 10px 20px #3a606e7a;
+}
+
+.card-link:link,
+.card-link:visited {
+  text-decoration: none;
+}
+
+.card-link:hover,
+.card-link:active {
+  text-decoration: underline;
+  /* font-weight: 500; */
+}
+
+.card-img {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.card-text-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.jacket-name {
+  border-top: 2px solid #3a606e;
+  margin-bottom: 1rem;
+  color: #113340;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.price {
+  color: #113340;
+  font-size: 1.5em;
+}
+/****************************/
+/* SECTION: FEATURES */
+/****************************/
+
+.section-features {
+  margin-bottom: 8rem;
+}
+
+.features-sec-heading {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.features-container {
+  max-width: 75rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  gap: 7rem;
+}
+
+.feature-text {
+  margin-bottom: 3rem;
+}
+
+.feature-img {
+  max-width: 100%;
+}
+
+/****************************/
+/* SECTION: FOOTER */
+/****************************/
+
+.section-footer {
+  max-width: 1920vw;
+  background-color: #3a606e;
+  color: #fff;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  padding: 2rem 5rem;
+}
+
+.social-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.social-icon-text {
+  font-size: 1.5rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.social-icon-container a {
+  padding: 0.5rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+/******************************************************/
+/* COLLECTION PAGE */
+/******************************************************/
+
+.collection-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.collection-hero-text {
+  padding-left: 2rem;
+  flex: 1;
+}
+
+.collection-hero-img {
+  border-radius: 6px 0 0 6px;
+  flex: 1;
+}
+
+/* .collection-hero {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+  height: 400px;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+} */
+
+/* .collection-hero-text-container {
+  flex: 1;
+  padding: 3rem;
+} */
+
+/* .collection-hero-img-container {
+  background-image: url(../images/collection-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  border-radius: 6px 0 0 6px;
+} */
+
+.collection-heading {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.collection-cards-container {
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+/******************************************************/
+/* ABOUT PAGE */
+/******************************************************/
+
+.about-primary-heading {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.about {
+  gap: 5rem;
+  margin-bottom: 8rem;
+}
+
+.about-sec-heading {
+  margin-bottom: 2rem;
+}
+
+.about-img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+/* .about-img-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+} */
+
+/* .about-img-1 {
+  background-image: url(../images/about1.jpg);
+} */
+
+/* .about-img-2 {
+  background-image: url(../images/about2.jpg);
+} */
+
+/******************************************************/
+/* CONTACT PAGE */
+/******************************************************/
+.main-container {
+  margin-top: 6rem;
+}
+
+.contact-prim-heading {
+  margin-bottom: 5rem;
+}
+
+.contact-text {
+  margin-bottom: 2rem;
+}
+
+.contact-hours-container {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+
+.contact-cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.contact-block {
+  flex: 1;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #113340;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.contact-btn {
+  border: 2px solid #113340;
+  border-radius: 6px;
+  background-color: #e2ecf0;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.contact-btn:link,
+.contact-btn:visited {
+  text-decoration: none;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+}
+
+.contact-btn:hover,
+.contact-btn:active {
+  color: #fff;
+  background-color: #113340;
+}
+
+/******************************************************/
+/* HEMSEDAL PAGE */
+/******************************************************/
+
+.product-info {
+  display: flex;
+  gap: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.product-image-and-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-img {
+  max-width: 500px;
+  max-height: 450px;
+  margin-bottom: 3rem;
+  box-shadow: 10px 10px 20px #3a606e66;
+  border-radius: 6px;
+}
+
+.product-text {
+  max-width: 500px;
+  font-size: 1.1rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.detail-text {
+  border-bottom: 2px solid #113340;
+  max-width: 41rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.product-price {
+  font-weight: 400;
+}
+
+.product-sec-heading {
+  margin-bottom: 1rem;
+}
+
+.size-label {
+  display: block;
+}
+
+.size.input {
+  display: block;
+}
+
+.size-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 41rem;
+  border-bottom: 2px solid #113340;
+  margin-bottom: 3rem;
+}
+
+.size-options {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  gap: 1rem;
+}
+
+.size-options li {
+  border: 2px solid #113340;
+  border-radius: 50%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.size-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: #113340;
+}
+
+.size-option:hover,
+.size-option:active {
+  color: #fff;
+  background-color: #113340;
+  cursor: pointer;
+}
+
+.prod-cta:link,
+.prod-cta:visited {
+  max-width: 41rem;
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  background-color: #113340;
+}
+
+.prod-cta:hover,
+.prod-cta:active {
+  max-width: 41rem;
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+  background-color: #3a606e0f;
+  font-weight: 500;
+}
+
+/******************************************************/
+/* CART PAGE */
+/******************************************************/
+
+.cart {
+  margin-top: 5rem;
+}
+
+.cart-headings {
+  display: flex;
+  gap: 3rem;
+  border-bottom: 2px solid #113340;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.cart-main-heading {
+  margin-bottom: 5rem;
+}
+
+.empty {
+  width: 13rem;
+}
+
+.cart-details {
+  display: flex;
+  gap: 3rem;
+  border-top: 2px solid #113340;
+  border-bottom: 2px solid #113340;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+}
+
+.cart-details-text {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+}
+
+.cart-img {
+  width: 13rem;
+  border: 1px solid #113340;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.cart-size {
+  text-align: left;
+}
+
+.cart-tert-heading {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  color: #113340;
+  text-align: center;
+}
+
+.cart-amount {
+  text-align: center;
+}
+
+.cart-price {
+  text-align: center;
+}
+
+.total-price {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+  margin-bottom: 6rem;
+}
+
+.cart-quad-heading {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cart-total-price {
+}
+
+.cart-cta-container {
+  margin-bottom: 8rem;
+}
+
+.cart-cta {
+  display: block;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/******************************************************/
+/* CHECKOUT PAGE */
+/******************************************************/
+
+.checkout-main-heading {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.checkout-details {
+  background-color: #3a606e0f;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  /* text-align: center; */
+}
+
+.checkout-sec-heading {
+  margin-bottom: 2rem;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.form-flex-item {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+.confirmation {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.confirmation-btn:link,
+.confirmation-btn:visited {
+  display: block;
+  border: 2px solid #113340;
+  border-radius: 6px;
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #113340;
+  text-decoration: none;
+}
+
+.confirmation-btn:hover,
+.confirmation-btn:active {
+  color: #113340;
+  background-color: #3a606e0f;
+}
+
+/******************************************************/
+/* CHECKOUT SUCCESS PAGE */
+/******************************************************/
+
+.confirmation-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid #113340;
+  border-radius: 6px;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+.confirmation-main-heading {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.confirmation-text {
+  margin-bottom: 5rem;
+}
+
+.thank-you-text {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.continue-btn {
+  margin-bottom: 5rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.continue-btn:link,
+.continue-btn:visited {
+  text-align: center;
+  display: block;
+  border: 2px solid #113340;
+  border-radius: 6px;
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #113340;
+  text-decoration: none;
+}
+
+.continue-btn:hover,
+.continue-btn:active {
+  color: #113340;
+  background-color: #3a606e0f;
+}
