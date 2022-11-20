@@ -71,87 +71,154 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="primary-heading">Checkout</h1>
+    <!-- BREADCRUMBS -->
 
-      <h2>Shipping adress</h2>
-      <section class="shipping-details">
-        <label for="first-name">First name*</label>
-        <input type="text" id="first-name" placeholder="Enter first name" />
+    <div class="breadcrumbs text-small">
+      <a href="../index.html">Home</a>
+      <p>></p>
+      <a href="../collection.html">Collection</a>
+      <p>></p>
+      <a href="/products/Hemsedal.html">Hemsedal</a>
+      <p>></p>
+      <a href="cart.html">Cart</a>
+      <p>></p>
+      <p class="current-crumb">Checkout</p>
+    </div>
 
-        <label for="last-name">Last name*</label>
-        <input type="text" id="last-name" placeholder="Enter last name" />
+    <main class="container-narrowest">
 
-        <label for="address">Address*</label>
-        <input type="text" id="address" placeholder="Enter address" />
+      <h1 class="checkout-main-heading primary-heading">Checkout</h1>
 
-        <label for="zip-code">Zip code*</label>
-        <input type="text" id="zip-code" placeholder="Enter zip code" />
+      <!-- SHIPPING SECTION -->
 
-        <label for="city">City*</label>
-        <input type="text" id="city" placeholder="Enter city" />
+      <section class="shipping-section checkout-details">
 
-        <label for="phone">Phone number*</label>
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder="Enter phone number"
-        />
+        <h2 class="checkout-sec-heading secondary-heading">Shipping adress</h2>
 
-        <label for="mail">Email address*</label>
-        <input type="email" id="mail" placeholder="Enter email address" />
+        <div class="form-flex">
+          
+            <div class="form-flex-item">
+              <label for="first-name" ">First name</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter first name" required
+              />
+            </div>
+
+            <div class="form-flex-item">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Enter last name" required/>
+            </div>
+          
+
+            <div class="form-flex-item">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="Enter address" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="zip-code">Zip code</label>
+              <input type="text" id="zip-code" placeholder="Enter zip code" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Enter city" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="country">Country</label>
+              <input type="text" id="country" placeholder="Enter country" required/>
+            </div>
+
+            <div class="form-flex-item">
+              <label for="phone">Phone number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter phone number" required
+              />
+            </div>
+
+            <div class="form-flex-item">
+              <label for="mail">Email address</label>
+              <input type="email" id="mail" placeholder="Enter email address" required/>
+            </div>
+        </div>
       </section>
 
-      <section class="payment-details">
-        <label for="card">Card type*</label>
-        <select name="card-type" id="card-type">
-          <option value="choose-card">Choose card type</option>
-          <option value="visa">Visa</option>
-          <option value="visa">Mastercard</option>
-          <option value="visa">Diners</option>
-          <option value="visa">Monopoly card</option>
-        </select>
+      <!-- PAYMENT SECTION -->
 
-        <label for="card-number">Card number*</label>
-        <input
-          type="card-number"
-          name="card-number"
-          id="card-number"
-          placeholder="Enter card number"
-        />
+      <section class="payment-section checkout-details">
 
-        <label for="cardholders-name">Cardholder's name</label>
-        <input
-          type="text"
-          name="cardholders-name"
-          id="cardhoders-name"
-          placeholder="Enter cardholder's name"
-        />
+        <h2 class="checkout-sec-heading secondary-heading">Payment details</h2>
 
-        <label for="exp-date">Expiration date</label>
-        <input
-          type="date"
-          name="exp-date"
-          id="exp-date"
-          placeholder="Enter expiration date"
-        />
+        <div class="form-flex">
+        <div class="form-flex-item">
+          <label for="card">Card type</label>
+          <select name="card-type" id="card-type" required>
+            <option value="choose-card">Choose card type</option>
+            <option value="visa">Visa</option>
+            <option value="visa">Mastercard</option>
+            <option value="visa">Diners</option>
+            <option value="visa">Monopoly card</option>
+          </select>
+        </div>
 
-        <label for="cvc-cvv">CVC/CVV*</label>
-        <input
-          type="password"
-          name="cvc-cvv"
-          id="cvc-cvv"
-          placeholder="Enter CVC/CVV*"
-        />
+        <div class="form-flex-item">
+          <label for="card-number">Card number</label>
+          <input
+            type="card-number"
+            name="card-number"
+            id="card-number"
+            placeholder="Enter card number" required
+          />
+        </div>
+
+        <div class="form-flex-item">
+          <label for="cardholders-name">Cardholder's name</label>
+          <input
+            type="text"
+            name="cardholders-name"
+            id="cardhoders-name"
+            placeholder="Enter Cardholder's name" required
+          />
+        </div>
+
+        <div class="form-flex-item">
+          <label for="exp-date">Expiration date</label>
+          <input
+            type="date"
+            name="exp-date"
+            id="exp-date"
+            placeholder="Enter expiration date" required
+          />
+        </div>
+
+        <div class="form-flex-item">
+          <label for="cvc-cvv">CVC/CVV</label>
+          <input
+            type="password"
+            name="cvc-cvv"
+            id="cvc-cvv"
+            placeholder="Enter CVC/CVV" required
+          />
+        </div>
       </section>
 
-      <div class="confirmation-btn">
-        <a href="checkout-success.html" class="confirmation-btn-link"
+      <!-- Placeholder for a submit button -->
+      <div class="confirmation container-narrowest">
+        <a href="checkout-success.html" class="confirmation-btn text"
           >Confirm and pay</a
         >
       </div>
+
+
     </main>
+
+
     <!-- SECTION: FOOTER -->
 
     <footer class="section-footer">

@@ -789,3 +789,79 @@ body {
   max-width: 30rem;
   margin: 0 auto;
 }
+
+/******************************************************/
+/* CHECKOUT PAGE */
+/******************************************************/
+
+.container-narrowest {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.checkout-main-heading {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.checkout-details {
+  background-color: #3a606e0f;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  /* text-align: center; */
+}
+
+.checkout-sec-heading {
+  margin-bottom: 2rem;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.form-flex-item {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+.confirmation {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.confirmation-btn:link,
+.confirmation-btn:visited {
+  display: block;
+  border: 2px solid #113340;
+  border-radius: 6px;
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #113340;
+  text-decoration: none;
+}
+
+.confirmation-btn:hover,
+.confirmation-btn:active {
+  color: #113340;
+  background-color: #3a606e0f;
+}
