@@ -225,14 +225,13 @@ body {
   width: 9rem;
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.cta:link,
-.cta:visited,
-.cta:hover,
-.cta:active {
   color: #113340;
 }
+
+/* .cta:link,
+.cta:visited {
+  color: #113340;
+} */
 
 .cta:hover,
 .cta:active {
@@ -240,18 +239,24 @@ body {
   background-color: #113340;
 }
 
-.cta-dark {
+.cta-dark:link,
+.cta-dark:visited {
   border: 2px solid #113340;
-  padding: 0.5rem;
+  padding: 1.5rem;
   border-radius: 6px;
   font-size: 1.5rem;
   text-decoration: none;
-  width: 12rem;
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
   font-weight: 500;
   background-color: #113340;
+}
+
+.cta-dark:hover,
+.cta-dark:active {
+  color: #113340;
+  background-color: #3a606e0f;
 }
 /****************************/
 /* SPECIFIC CSS */
@@ -702,26 +707,25 @@ body {
 /* CART PAGE */
 /******************************************************/
 
+.cart {
+  margin-top: 5rem;
+}
+
 .cart-headings {
   display: flex;
   gap: 3rem;
   border-bottom: 2px solid #113340;
   margin-bottom: 1rem;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 2rem 0;
+}
+
+.cart-main-heading {
+  margin-bottom: 5rem;
 }
 
 .empty {
   width: 200px;
-}
-
-.cart {
-  margin-top: 5rem;
-}
-
-.cart-heading {
-  margin-bottom: 5rem;
 }
 
 .cart-details {
@@ -730,12 +734,14 @@ body {
   border-bottom: 2px solid #113340;
   margin-bottom: 1rem;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 2rem 0;
 }
 
 .cart-img {
-  width: 200px;
+  width: 13rem;
+  border: 1px solid #113340;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 .cart-size {
@@ -763,7 +769,7 @@ body {
   justify-content: flex-end;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #113340;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .cart-quad-heading {
@@ -772,4 +778,14 @@ body {
 }
 
 .cart-total-price {
+}
+
+.cart-cta-container {
+  margin-bottom: 8rem;
+}
+
+.cart-cta {
+  display: block;
+  max-width: 30rem;
+  margin: 0 auto;
 }
