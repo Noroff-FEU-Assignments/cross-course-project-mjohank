@@ -18,6 +18,10 @@
     font-size: 1rem;
   }
 
+  .text-smaller {
+    font-size: 0.8rem;
+  }
+
   .logo {
     margin-right: 2rem;
   }
@@ -40,6 +44,19 @@
 
   .features-container {
     gap: 4rem;
+  }
+
+  .collection-cards-container {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .about-sec-heading {
+    margin-bottom: 1rem;
+  }
+
+  .contact-cta-container {
+    gap: 2rem;
   }
 }
 
@@ -74,6 +91,10 @@
     display: block;
     font-size: 2rem;
     margin-right: 1rem;
+  }
+
+  .collection-cards-container {
+    grid-template-columns: 1fr;
   }
 }
 

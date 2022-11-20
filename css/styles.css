@@ -21,14 +21,15 @@ body {
   margin: 0 auto;
 }
 
-.container-large {
-  max-width: 950rem;
-  margin: 0 auto;
-}
-
 .container-narrow {
   max-width: 62rem;
   margin: 0 auto;
+}
+
+.container-narrowest {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /****************************/
@@ -647,6 +648,14 @@ body {
   margin-bottom: 1rem;
 }
 
+.size-label {
+  display: block;
+}
+
+.size.input {
+  display: block;
+}
+
 .size-container {
   display: flex;
   gap: 2rem;
@@ -655,20 +664,37 @@ body {
   margin-bottom: 3rem;
 }
 
-.size-option {
-  border: 2px solid #113340;
-  border-radius: 6px;
-  /* width: 3rem; */
-  /* height: 3rem; */
+.size-options {
+  display: flex;
+  list-style: none;
   text-align: center;
+  gap: 1rem;
+}
+
+.size-options li {
+  border: 2px solid #113340;
+  border-radius: 50%;
   padding: 1rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.size-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: #113340;
 }
 
 .size-option:hover,
 .size-option:active {
   color: #fff;
   background-color: #113340;
+  cursor: pointer;
 }
 
 .prod-cta:link,
@@ -679,7 +705,6 @@ body {
   border-radius: 6px;
   font-size: 1.5rem;
   text-decoration: none;
-  /* width: 12rem; */
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
@@ -695,7 +720,6 @@ body {
   border-radius: 6px;
   font-size: 1.5rem;
   text-decoration: none;
-  /* width: 12rem; */
   text-align: center;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #113340;
@@ -794,11 +818,6 @@ body {
 /* CHECKOUT PAGE */
 /******************************************************/
 
-.container-narrowest {
-  max-width: 30rem;
-  margin: 0 auto;
-  padding: 2rem;
-}
 .checkout-main-heading {
   margin-top: 5rem;
   margin-bottom: 3rem;
@@ -862,6 +881,54 @@ select {
 
 .confirmation-btn:hover,
 .confirmation-btn:active {
+  color: #113340;
+  background-color: #3a606e0f;
+}
+
+/******************************************************/
+/* CHECKOUT SUCCESS PAGE */
+/******************************************************/
+
+.confirmation-box {
+  text-align: center;
+  border: 2px solid #113340;
+  border-radius: 6px;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+.confirmation-main-heading {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.confirmation-text {
+  margin-bottom: 5rem;
+}
+
+.thank-you-text {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.continue-btn {
+  margin-bottom: 5rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.continue-btn:link,
+.continue-btn:visited {
+  text-align: center;
+  display: block;
+  border: 2px solid #113340;
+  border-radius: 6px;
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #113340;
+  text-decoration: none;
+}
+
+.continue-btn:hover,
+.continue-btn:active {
   color: #113340;
   background-color: #3a606e0f;
 }
