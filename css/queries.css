@@ -46,9 +46,20 @@
     gap: 4rem;
   }
 
+  .collection-hero-img {
+    border-radius: 6px;
+  }
+
   .collection-cards-container {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+  }
+
+  .cart-details {
+    gap: 2rem;
+  }
+  .cart-details-text {
+    gap: 2rem;
   }
 
   .about-sec-heading {
@@ -96,6 +107,19 @@
   .collection-cards-container {
     grid-template-columns: 1fr;
   }
+
+  .product-info {
+    flex-direction: column;
+  }
+
+  .cart-img {
+    width: 20rem;
+  }
+
+  .cart-details {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /****************************/
@@ -122,5 +146,60 @@
   .section-hero .cta:hover,
   .section-hero .cta:active {
     background-color: #3a606e;
+  }
+
+  .cart-details-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-prod-name,
+  .cart-size,
+  .cart-amount,
+  .cart-price {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #113340;
+  }
+
+  .total-price {
+    justify-content: center;
+  }
+
+  .confirmation-main-heading {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .confirmation-text {
+    font-size: 0.8rem;
+  }
+
+  .confirmation-main {
+    justify-content: center;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .contact-cta-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-text {
+    max-width: 26rem;
+    text-align: center;
+  }
+
+  .contact-block {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 26rem;
+    padding: 3rem;
   }
 }
