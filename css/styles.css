@@ -129,7 +129,6 @@ header {
   display: none;
 }
 
-
 /****************************/
 /* BREADCRUMBS */
 /****************************/
@@ -696,8 +695,8 @@ header {
   cursor: pointer;
 }
 
-.prod-cta:link,
-.prod-cta:visited {
+.addToCart-btn:link,
+.addToCart-btn:visited {
   max-width: 41rem;
   border: 2px solid #113340;
   padding: 0.5rem;
@@ -709,10 +708,11 @@ header {
   color: #fff;
   font-weight: 500;
   background-color: #113340;
+  margin-bottom: 1rem;
 }
 
-.prod-cta:hover,
-.prod-cta:active {
+.addToCart-btn:hover,
+.addToCart-btn:active {
   max-width: 41rem;
   border: 2px solid #113340;
   padding: 0.5rem;
@@ -726,6 +726,41 @@ header {
   font-weight: 500;
 }
 
+.addToCart-btn:active {
+  background-color: #113340;
+  color: #fff;
+}
+
+.viewCart-btn:link,
+.view-btn:visited {
+  max-width: 41rem;
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
+  background-color: #3a606e0f;
+  font-weight: 500;
+}
+
+.viewCart-btn:hover,
+.viewCart-btn:active {
+  max-width: 41rem;
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  background-color: #113340;
+  margin-bottom: 1rem;
+}
 /******************************************************/
 /* CART PAGE */
 /******************************************************/
