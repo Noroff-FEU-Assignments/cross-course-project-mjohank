@@ -21,65 +21,63 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/queries.css" />
     <title>Hemsedal | Rainydays</title>
+
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3616623,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3616623, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
 
   <body>
     <!-- SECTION: HEADER -->
 
-    <header class="section-header">
-      <nav class="main-nav-container">
-        <!-- MAIN NAV LOGO -->
+    <header class="nav-container">
+      <div class="logo-container">
         <a href="../index.html">
           <img
             src="../images/RainyDays_Logo-dark.png"
             alt="Rainydays logo"
             class="main-nav-logo"
-        /></a>
+          />
+        </a>
+      </div>
 
-        <!-- MAIN NAV LIST -->
+      <div class="navbar">
+        <label for="menu-checkbox" class="toggle-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
 
-        <ul class="main-nav-list">
-          <li><a href="../index.html" class="main-nav-link">Home</a></li>
-          <li>
-            <a href="../collection.html" class="main-nav-link">Collection</a>
-          </li>
-          <li><a href="../about.html" class="main-nav-link">About</a></li>
-          <li><a href="../contact.html" class="main-nav-link">Contact</a></li>
-        </ul>
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
 
-        <!-- MAIN NAV ICONS -->
-        <ul class="main-nav-icons">
-          <!-- <li class="main-nav-icon">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          </li>
-          <li class="main-nav-icon">
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-          </li>
-          <li class="main-nav-icon">
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-          </li> -->
-          <li class="main-nav-icon">
-            <a href="../cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-          </li>
-        </ul>
-
-        <!-- The following <div> is a placeholder for the checkbox hack menu. I wrote the code for the page desktop first, before I saw the part about it being better to design mobile first. I couldn't figure out how to reverse engineer the checkbox hack that was shown as mobile first in the tutorial. I only did things this way because the Additional Comments in the Module Assignment text seemed to allow for a temporary "solution" of this sort   -->
-
-        <div class="hamburger-icon">
-          <a href="#"><i class="fas fa-bars"></i></a>
-        </div>
-      </nav>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../collection.html">Collection</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li>
+              <a href="../cart.html" class="nav-icon"
+                ><i class="fa-solid fa-bag-shopping"></i> Cart (<span
+                  class="cart-number"
+                  >0</span
+                >)</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- BREADCRUMBS -->
@@ -121,7 +119,7 @@
           <img src="" alt="Hemsedal jacket seen from the front" />
         </div> -->
 
-          <div class="detail-sizes">
+          <!-- <div class="detail-sizes">
             <h2 class="product-sec-heading secondary-heading">Choose size:</h2>
 
             <div class="size-container">
@@ -133,9 +131,8 @@
                 <li class="size-option text">XL</li>
               </ul>
             </div>
-
-          </div>
-          <a href="../cart.html" class="prod-cta">Add to cart</a>
+        </div> -->
+        <a href="../cart.html" class="prod-cta">Add to cart</a>
       </div>
     </main>
 
