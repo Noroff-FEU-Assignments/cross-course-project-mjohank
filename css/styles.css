@@ -732,7 +732,7 @@ header {
 }
 
 .viewCart-btn:link,
-.view-btn:visited {
+.viewCart-btn:visited {
   max-width: 41rem;
   border: 2px solid #113340;
   padding: 0.5rem;
@@ -758,7 +758,7 @@ header {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
   font-weight: 500;
-  background-color: #113340;
+  background-color: #3a606e;
   margin-bottom: 1rem;
 }
 /******************************************************/
