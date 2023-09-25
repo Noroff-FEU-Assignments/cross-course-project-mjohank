@@ -55,8 +55,11 @@
     gap: 4rem;
   }
 
+  .collection-hero {
+    gap: 3rem;
+  }
   .collection-hero-img {
-    border-radius: 6px;
+    /* border-radius: 6px; */
   }
 
   .collection-cards-container {
@@ -160,6 +163,14 @@
 
   .collection-cards-container {
     grid-template-columns: 1fr;
+  }
+
+  .collection-hero-img {
+    width: 100%;
+  }
+
+  .product-card {
+    margin: 0 auto;
   }
 
   .product-info {

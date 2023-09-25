@@ -17,7 +17,7 @@ body {
 
 .container {
   max-width: 75rem;
-  /* padding: 0 2rem; */
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ header {
 .nav-list li a:link,
 .nav-list li a:visited {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #113340;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -273,7 +273,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .hero-container {
@@ -305,7 +305,7 @@ header {
 .most-popular-cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 3.5rem;
+  gap: 2.5rem;
   margin: 0 auto;
   justify-content: center;
 }
@@ -448,12 +448,12 @@ header {
 }
 
 .collection-hero-text {
-  padding-left: 2rem;
   flex: 1;
 }
 
 .collection-hero-img {
-  border-radius: 6px 0 0 6px;
+  border-radius: 6px;
+  width: 100%;
   flex: 1;
 }
 
@@ -476,7 +476,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
-  border-radius: 6px 0 0 6px;
+  border-radius: 6px;
+  width: 100%;
+  height: 400px;
 } */
 
 .collection-heading {
@@ -529,7 +531,115 @@ header {
 /******************************************************/
 /* CONTACT PAGE */
 /******************************************************/
+
 .main-container {
+  margin-top: 2rem;
+}
+
+.contact-prim-heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-container {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-fieldset {
+  background-color: #3a606e66;
+  border: none;
+  border-radius: 16px;
+  /* padding: 1rem; */
+  margin-bottom: 3rem;
+}
+
+.fa-thumbs-up {
+  color: #113340;
+  font-size: 2rem;
+}
+
+.validation-success {
+  text-align: center;
+  color: #113340;
+  font-size: 2rem;
+  background-color: #fff;
+  margin: 2rem;
+  border-radius: 8px;
+  border: 2px solid #113340;
+  display: none;
+}
+
+#contact-form {
+  margin: 1rem 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #113340;
+}
+
+.contact-input {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 2px solid #113340;
+}
+
+.contact-input::placeholder {
+  color: #113340;
+}
+
+.inp-requirements {
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+
+.form-error {
+  color: rgb(204, 16, 16);
+  font-size: 1rem;
+  margin-top: 2px;
+  display: none;
+}
+
+.contact-btn {
+  background: #113340;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  align-self: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-btn:hover {
+  border: 3px solid #113340;
+  color: #113340;
+  background-color: #fff;
+}
+
+.contact-btn:active {
+  border: 2px solid #fff;
+  color: #113340;
+  /* color: #fff; */
+  background-color: #3a606e0f;
+  font-size: 1.2rem;
+}
+
+/* .main-container {
   margin-top: 6rem;
 }
 
@@ -591,8 +701,9 @@ header {
 .contact-btn:hover,
 .contact-btn:active {
   color: #fff;
-  background-color: #113340;
+  background-color: #113340; 
 }
+  */
 
 /******************************************************/
 /* HEMSEDAL PAGE */
@@ -781,10 +892,10 @@ header {
 .cart-main-heading {
   margin-bottom: 5rem;
 }
-
+/* 
 .empty {
   width: 13rem;
-}
+} */
 
 .cart-details {
   display: flex;
@@ -793,12 +904,13 @@ header {
   border-bottom: 2px solid #113340;
   margin-bottom: 1rem;
   padding: 2rem 0;
+  justify-content: space-around;
 }
 
 .cart-details-text {
   display: flex;
-  gap: 3rem;
-  justify-content: space-around;
+  gap: 5rem;
+  justify-content: space-between;
 }
 
 .cart-img {
@@ -854,6 +966,78 @@ header {
   margin: 0 auto;
 }
 
+.qty-minus {
+  font-size: 2rem;
+}
+
+.qty-plus {
+  font-size: 2rem;
+}
+
+/******************************************************/
+/* CART2 PAGE */
+/******************************************************/
+
+.cart-main-heading {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cart-items-container {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-headings {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  border-bottom: 2px solid #113340;
+  margin: 0 auto;
+}
+
+.product-name {
+  width: 40%;
+}
+
+.cart-pprice {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.product-total {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.remove {
+  width: 15%;
+  cursor: pointer;
+}
+
+.cart-detaljer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #113340;
+}
+
 /******************************************************/
 /* CHECKOUT PAGE */
 /******************************************************/
@@ -886,17 +1070,17 @@ header {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input {
+/* input {
   font-size: 1.5rem;
-}
+} */
 
-label {
+/* label {
   font-size: 1rem;
-}
+} */
 
-::placeholder {
+/* ::placeholder {
   font-size: 1rem;
-}
+} */
 
 select {
   font-size: 1rem;
@@ -923,6 +1107,80 @@ select {
 .confirmation-btn:active {
   color: #113340;
   background-color: #3a606e0f;
+}
+
+/* NEW STYLING */
+
+.checkout-prim-heading {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.checkout-form {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.checkout-sec-heading {
+  text-align: center;
+}
+
+.checkout-fieldset {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  background-color: #3a606e66;
+  border-radius: 16px;
+  border: none;
+  padding: 1rem;
+}
+
+.checkout-flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.shipping-details-container,
+.payment-details-container {
+  flex: 1;
+  width: 100%;
+}
+
+.checkout-input {
+  /* display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 4px;
+  color: #113340; */
+  background-color: #fff;
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 2px solid #113340;
+  margin: 0 auto;
+}
+
+.checkout-submit-btn {
+  border: 2px solid #113340;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  background-color: #3a606e0f;
+  text-decoration: none;
+  width: 9rem;
+  text-align: center;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #113340;
 }
 
 /******************************************************/

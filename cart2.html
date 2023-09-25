@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/queries.css" />
     <title>Your cart | Rainydays</title>
-
     <!-- Hotjar Tracking Code for my site -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -92,52 +91,30 @@
       <p class="current-crumb">Shopping cart</p>
     </div>
 
-    <!-- MAIN SECTION -->
+    <!-- MAIN CONTENT -->
     <main>
-      <div class="cart container">
-        <h1 class="cart-main-heading primary-heading">Your shopping cart</h1>
-        <a href="cart2.html">temp link</a>
+      <h1 class="cart-main-heading primary-heading">Your shopping cart</h1>
 
-        <div class="cart-details">
+      <div class="cart-items-container">
+        <div class="product-headings">
+          <h3 class="product-name">Product</h3>
+          <h3 class="cart-pprice">Price</h3>
+          <h3 class="quantity">Quantity</h3>
+          <h3 class="product-total">Total</h3>
+          <h3 class="remove">Remove</h3>
+        </div>
+
+        <div class="cart-detaljer">
           <img
             src="/images/Hemsedal.jpg"
-            alt="Hemsedal jacket"
-            class="cart-img"
+            alt="Image of Hemsedal jacket"
+            class="product-name"
           />
-
-          <div class="cart-details-text">
-            <div class="cart-prod-name">
-              <p class="text-small">Product name</p>
-              <h2 class="cart-sec-heading secondary-heading">Hemsedal</h2>
-            </div>
-
-            <!-- <div class="cart-size">
-              <p class="text-small">Size</p>
-              <p class="text">Large</p>
-            </div> -->
-
-            <div class="cart-amount">
-              <p class="text-small">Quantity</p>
-              <p class="amount-text text">2</p>
-            </div>
-
-            <div class="cart-price">
-              <p class="text-small">Price</p>
-              <p class="text">NOK 799</p>
-            </div>
-          </div>
+          <p class="cart-pprice">799</p>
+          <p class="quantity">2</p>
+          <p class="product-total">1598</p>
+          <p class="remove"><i class="fa-solid fa-trash-can"></i></p>
         </div>
-
-        <div class="total-price container">
-          <h4 class="cart-quad-heading text">Total:</h4>
-          <p class="cart-total-price text">NOK 799</p>
-        </div>
-      </div>
-
-      <div class="cart-cta-container container-narrow">
-        <a href="checkout.html" class="cart-cta cta-dark"
-          >Proceed to checkout</a
-        >
       </div>
     </main>
     <!-- SECTION: FOOTER -->

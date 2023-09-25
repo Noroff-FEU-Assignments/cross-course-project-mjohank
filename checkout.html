@@ -22,16 +22,21 @@
     <link rel="stylesheet" href="/css/queries.css" />
     <title>Checkout | Rainydays</title>
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3616623,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3616623, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
 
   <body>
@@ -81,20 +86,163 @@
       <p>></p>
       <a href="../collection.html">Collection</a>
       <p>></p>
-      <a href="/products/Hemsedal.html">Hemsedal</a>
-      <p>></p>
+
       <a href="cart.html">Cart</a>
       <p>></p>
       <p class="current-crumb">Checkout</p>
     </div>
 
-    <main class="container-narrowest">
+    <main class="checkout-main container">
+      <h1 class="primary-heading checkout-prim-heading">Checkout</h1>
 
-      <h1 class="checkout-main-heading primary-heading">Checkout</h1>
+      <form action="" class="checkout-form container">
+        <fieldset class="checkout-fieldset">
+          <!--Shipping address details -->
 
-      <!-- SHIPPING SECTION -->
+          <div class="checkout-flex-container">
+            <div class="shipping-details-container">
+              <h2 class="secondary-heading checkout-sec-heading">
+                Shipping Address
+              </h2>
 
-      <section class="shipping-section checkout-details">
+              <div class="checkout-input-container checkout-names">
+                <label for="first-name" class="checkout-label form-label"
+                  >First Name*</label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  class="checkout-input"
+                  placeholder="ex.Lucky"
+                />
+              </div>
+
+              <div class="checkout-input-container last-name-container">
+                <label for="last-name" class="form-label">Last Name*</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  class="checkout-input"
+                  placeholder="ex.Luke"
+                />
+              </div>
+
+              <div class="checkout-input-container address-container">
+                <label for="address-line" class="form-label"
+                  >Address Line*</label
+                >
+                <input
+                  type="text"
+                  id="address-line"
+                  class="checkout-input"
+                  placeholder="ex.Winnie Pooh Street 12"
+                />
+              </div>
+
+              <div class="checkout-input-container zip-code-container">
+                <label for="zip-code" class="form-label">Zip-code*</label>
+                <input
+                  type="text"
+                  id="zip-code"
+                  class="checkout-input"
+                  placeholder="ex.5522"
+                />
+              </div>
+
+              <div class="checkout-input-container city-container">
+                <label for="city" class="form-label">City*</label>
+                <input
+                  type="text"
+                  id="city"
+                  class="checkout-input"
+                  placeholder="ex.Haugesund"
+                />
+              </div>
+
+              <div class="checkout-input-container country-container">
+                <label for="country" class="form-label">Country*</label>
+                <input
+                  type="text"
+                  id="country"
+                  class="checkout-input"
+                  placeholder="ex.Norway"
+                />
+              </div>
+            </div>
+
+            <!-- Payment details -->
+
+            <div class="payment-details-container">
+              <h2 class="secondary-heading checkout-sec-heading">
+                Payment details
+              </h2>
+
+              <div class="checkout-input-container">
+                <label for="card-type" class="form-label">Card Type*</label>
+                <select name="card-type" id="card-type" class="checkout-input">
+                  <option value="choose-card">Choose card type</option>
+                  <option value="visa">Visa</option>
+                  <option value="visa">Mastercard</option>
+                  <option value="visa">Diners</option>
+                  <option value="visa">Monopoly card</option>
+                </select>
+              </div>
+
+              <div class="checkout-input-container card-number-container">
+                <label for="card-number" class="form-label">Card Number*</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  class="checkout-input"
+                  placeholder="ex.xxx-xxxx-xxxx"
+                />
+              </div>
+
+              <div class="checkout-input-container card-name-container">
+                <label for="card-name" class="form-label"
+                  >Cardholder's Name*</label
+                >
+                <input
+                  type="text"
+                  id="card-name"
+                  class="checkout-input"
+                  placeholder="ex.Lucky Luke"
+                />
+              </div>
+
+              <div class="checkout-input-container exp-date-container">
+                <label for="exp-date" class="form-label"
+                  >Expiration date*</label
+                >
+                <input type="date" name="exp-date" id="exp-date
+                class="checkout-input" class="checkout-input" placeholder="Enter
+                expiration date" />
+              </div>
+
+              <div class="checkout-input-container cvc-container">
+                <label for="cvc-cvv" class="form-label">CVC/CVV*</label>
+                <input
+                  type="password"
+                  name="cvc-cvv"
+                  id="cvc-cvv"
+                  class="checkout-input"
+                  placeholder="ex.xxx"
+                />
+              </div>
+            </div>
+            <input type="submit" class="checkout-submit-btn" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <!-- <main class="container-narrowest ">
+
+      <h1 class="checkout-main-heading primary-heading">Checkout</h1> -->
+
+    <!-- SHIPPING SECTION -->
+
+    <!-- <section class="shipping-section checkout-details">
 
         <h2 class="checkout-sec-heading secondary-heading">Shipping adress</h2>
 
@@ -150,11 +298,11 @@
               <input type="email" id="mail" placeholder="Enter email address" required/>
             </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- PAYMENT SECTION -->
+    <!-- PAYMENT SECTION -->
 
-      <section class="payment-section checkout-details">
+    <!-- <section class="payment-section checkout-details">
 
         <h2 class="checkout-sec-heading secondary-heading">Payment details</h2>
 
@@ -209,18 +357,17 @@
             placeholder="Enter CVC/CVV" required
           />
         </div>
-      </section>
+      </section> -->
 
-      <!-- Placeholder for a submit button -->
-      <div class="confirmation container-narrowest">
+    <!-- Placeholder for a submit button -->
+    <!-- <div class="confirmation container-narrowest">
         <a href="checkout-success.html" class="confirmation-btn text"
           >Confirm and pay</a
         >
       </div>
 
 
-    </main>
-
+    </main> -->
 
     <!-- SECTION: FOOTER -->
 
