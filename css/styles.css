@@ -238,7 +238,7 @@ header {
 .cta-dark:link,
 .cta-dark:visited {
   border: 2px solid #113340;
-  padding: 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   font-size: 1.5rem;
   text-decoration: none;
@@ -249,8 +249,7 @@ header {
   background-color: #113340;
 }
 
-.cta-dark:hover,
-.cta-dark:active {
+.cta-dark:hover {
   color: #113340;
   background-color: #3a606e0f;
 }
@@ -268,12 +267,12 @@ header {
 
 .section-hero {
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   background-image: url(/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .hero-container {
@@ -298,7 +297,7 @@ header {
 }
 
 .popular-sec-heading {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -727,7 +726,7 @@ header {
   max-height: 450px;
   margin-bottom: 3rem;
   box-shadow: 10px 10px 20px #3a606e66;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 
 .product-text {
@@ -914,7 +913,7 @@ header {
 }
 
 .cart-img {
-  width: 13rem;
+  width: 8rem;
   border: 1px solid #113340;
   padding: 1rem;
   border-radius: 6px;
@@ -934,6 +933,27 @@ header {
 .cart-amount {
   text-align: center;
 }
+/* -------------------------- */
+.qty-box {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.qty-icons {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+  color: #3a606e;
+  border: 2px solid #3a606e;
+  border-radius: 5px;
+}
+
+.qty-icons:hover {
+  color: green;
+  font-size: 1.6rem;
+}
+/* ------------------------------- */
 
 .cart-price {
   text-align: center;
@@ -1042,7 +1062,7 @@ header {
 /* CHECKOUT PAGE */
 /******************************************************/
 
-.checkout-main-heading {
+/* .checkout-main-heading {
   margin-top: 5rem;
   margin-bottom: 3rem;
 }
@@ -1052,7 +1072,6 @@ header {
   border-radius: 6px;
   padding: 1rem;
   margin-bottom: 2rem;
-  /* text-align: center; */
 }
 
 .checkout-sec-heading {
@@ -1068,7 +1087,7 @@ header {
 
 .form-flex-item {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
 /* input {
   font-size: 1.5rem;
@@ -1082,9 +1101,9 @@ header {
   font-size: 1rem;
 } */
 
-select {
+/* select {
   font-size: 1rem;
-}
+} */
 
 .confirmation {
   text-align: center;
