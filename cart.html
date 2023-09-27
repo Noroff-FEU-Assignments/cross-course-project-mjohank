@@ -87,61 +87,70 @@
       <p>></p>
       <a href="../collection.html">Collection</a>
       <p>></p>
-      <a href="/products/Hemsedal.html">Hemsedal</a>
-      <p>></p>
       <p class="current-crumb">Shopping cart</p>
     </div>
 
     <!-- MAIN SECTION -->
-    <main>
-      <div class="cart container">
-        <h1 class="cart-main-heading primary-heading">Your shopping cart</h1>
-        <a href="cart2.html">temp link</a>
 
-        <div class="cart-details">
+    <main>
+      <h1 class="cart-main-heading primary-heading">Your shopping cart</h1>
+
+      <section class="cart-details">
+        <div class="item-details-container">
+          <div class="item-remove-container">
+            <h4 class="item-cart-heading">Remove</h4>
+
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+
           <img
             src="/images/Hemsedal.jpg"
             alt="Hemsedal jacket"
-            class="cart-img"
+            class="item-img"
           />
 
-          <div class="cart-details-text">
-            <div class="cart-prod-name">
-              <p class="text-small">Product name</p>
-              <h2 class="cart-sec-heading secondary-heading">Hemsedal</h2>
-            </div>
+          <div class="item-name-container">
+            <h4 class="item-cart-heading">Item:</h4>
+            <h3 class="item-name tertiary-heading">Hemsedal</h3>
+          </div>
 
-            <!-- <div class="cart-size">
-              <p class="text-small">Size</p>
-              <p class="text">Large</p>
-            </div> -->
-
-            <div class="cart-amount">
-              <p class="text-small">Quantity</p>
-              <div class="qty-box">
-                <i class="fa-solid fa-minus qty-icons"></i>
-                <p class="amount-text text">2</p>
-                <i class="fa-solid fa-plus qty-icons"></i>
-              </div>
-            </div>
-
-            <div class="cart-price">
-              <p class="text-small">Price</p>
-              <p class="text">NOK 799</p>
+          <div class="item-qty-container">
+            <h4 class="item-cart-heading">Qty</h4>
+            <div class="item-qty-icons-box">
+              <i class="fa-solid fa-circle-minus qty-icons"></i>
+              <p class="item-qty-number text">2</p>
+              <i class="fa-solid fa-circle-plus qty-icons"></i>
             </div>
           </div>
-        </div>
 
-        <div class="total-price container">
-          <h4 class="cart-quad-heading text">Total:</h4>
-          <p class="cart-total-price text">NOK 799</p>
+          <div class="item-price-container">
+            <h4 class="item-cart-heading">Price</h4>
+            <h3 class="item-price tertiary-heading">NOK 799.00</h3>
+          </div>
+
+          <div class="item-subtotal-container">
+            <h4 class="item-cart-heading">Subtotal</h4>
+            <h3 class="item-total tertiary-heading">
+              NOK <span class="item-subtotal-number">1598.00</span>
+            </h3>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- CART SUMMARY -->
+
+      <section class="cart-summary-container">
+        <div class="cart-total-box">
+          <p class="cart-total-text text">
+            Cart total: NOK <span class="total-sum-number">1598.00</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- CART CTAs -->
 
       <div class="cart-cta-container container-narrow">
-        <a href="checkout.html" class="cart-cta cta-dark"
-          >Proceed to checkout</a
-        >
+        <a href="checkout.html" class="cart-cta cta-dark"> Checkout</a>
         <a href="collection.html" class="cart-cta cta">Continue shopping</a>
       </div>
     </main>
