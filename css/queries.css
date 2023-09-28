@@ -47,8 +47,8 @@
   .cta {
     font-size: 1rem;
     font-weight: 500;
-    width: 9rem;
-    padding: 0.5rem;
+    /* width: 9rem; */
+    /* padding: 0.5rem; */
   }
 
   .features-container {
@@ -184,6 +184,25 @@
   .cart-details {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* NEW */
+
+  .item-details-container {
+    justify-content: center;
+  }
+
+  .item-description-container {
+    flex-grow: 0;
+  }
+
+  .item-numbers-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .item-price-container {
+    display: none;
   }
 }
 

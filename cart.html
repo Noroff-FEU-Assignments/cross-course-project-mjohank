@@ -95,44 +95,51 @@
     <main>
       <h1 class="cart-main-heading primary-heading">Your shopping cart</h1>
 
-      <section class="cart-details">
+      <section class="cart-details-section">
+        <!-- Below div to be replaced by JS -->
+
         <div class="item-details-container">
-          <div class="item-remove-container">
-            <h4 class="item-cart-heading">Remove</h4>
+          <div class="item-description-container">
+            <img
+              src="/images/Hemsedal.jpg"
+              alt="Hemsedal jacket"
+              class="item-img"
+            />
 
-            <i class="fa-solid fa-trash-can"></i>
-          </div>
-
-          <img
-            src="/images/Hemsedal.jpg"
-            alt="Hemsedal jacket"
-            class="item-img"
-          />
-
-          <div class="item-name-container">
-            <h4 class="item-cart-heading">Item:</h4>
-            <h3 class="item-name tertiary-heading">Hemsedal</h3>
-          </div>
-
-          <div class="item-qty-container">
-            <h4 class="item-cart-heading">Qty</h4>
-            <div class="item-qty-icons-box">
-              <i class="fa-solid fa-circle-minus qty-icons"></i>
-              <p class="item-qty-number text">2</p>
-              <i class="fa-solid fa-circle-plus qty-icons"></i>
+            <div class="item-name-container item-flex-cont">
+              <h4 class="item-cart-heading">Item:</h4>
+              <h3 class="item-name tertiary-heading">Hemsedal</h3>
             </div>
           </div>
 
-          <div class="item-price-container">
-            <h4 class="item-cart-heading">Price</h4>
-            <h3 class="item-price tertiary-heading">NOK 799.00</h3>
-          </div>
+          <div class="item-numbers-container">
+            <div class="item-qty-container item-flex-cont">
+              <h4 class="item-cart-heading">Qty</h4>
+              <div class="item-qty-icons-box">
+                <i class="fa-solid fa-circle-minus qty-icons"></i>
+                <p class="item-qty-number text">2</p>
+                <i class="fa-solid fa-circle-plus qty-icons"></i>
+              </div>
+            </div>
 
-          <div class="item-subtotal-container">
-            <h4 class="item-cart-heading">Subtotal</h4>
-            <h3 class="item-total tertiary-heading">
-              NOK <span class="item-subtotal-number">1598.00</span>
-            </h3>
+            <div class="item-price-container">
+              <div class="item-flex-cont">
+                <h4 class="item-cart-heading">Price</h4>
+                <h3 class="item-price tertiary-heading text">NOK 799.00</h3>
+              </div>
+            </div>
+
+            <div class="item-subtotal-container item-flex-cont">
+              <h4 class="item-cart-heading">Subtotal</h4>
+              <h3 class="item-total tertiary-heading text">
+                NOK <span class="item-subtotal-number">1598.00</span>
+              </h3>
+            </div>
+
+            <div class="item-remove-container item-flex-cont">
+              <h4 class="item-cart-heading">Remove</h4>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
           </div>
         </div>
       </section>
@@ -142,14 +149,19 @@
       <section class="cart-summary-container">
         <div class="cart-total-box">
           <p class="cart-total-text text">
-            Cart total: NOK <span class="total-sum-number">1598.00</span>
+            Cart total: <span class="total-sum-number">NOK 1598.00</span>
           </p>
         </div>
       </section>
 
       <!-- CART CTAs -->
 
-      <div class="cart-cta-container container-narrow">
+      <!-- <div class="cart-cta-container container-narrow">
+        <a href="checkout.html" class="cart-cta cta-dark"> Checkout</a>
+        <a href="collection.html" class="cart-cta cta">Continue shopping</a>
+      </div> -->
+
+      <div class="cart-cta-container">
         <a href="checkout.html" class="cart-cta cta-dark"> Checkout</a>
         <a href="collection.html" class="cart-cta cta">Continue shopping</a>
       </div>
