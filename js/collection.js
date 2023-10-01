@@ -1,7 +1,7 @@
 const productsContainer = document.querySelector(".collection-cards-container");
 
-function displayProducts() {
-  products.forEach((product) => {
+function displayCollection() {
+  productList.forEach((product) => {
     productsContainer.innerHTML += `
     <div class="product-card" onclick="redirectToProductPage('${product.name}')">
           <a href="../products/Hemsedal.html" class="card-link">
@@ -19,4 +19,4 @@ function displayProducts() {
   });
 }
 
-displayProducts();
+displayCollection();

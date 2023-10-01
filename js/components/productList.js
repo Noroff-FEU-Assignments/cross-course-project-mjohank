@@ -1,4 +1,4 @@
-const products = [
+const productList = [
   {
     id: 0,
     name: "Hemsedal",
