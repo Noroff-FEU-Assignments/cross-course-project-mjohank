@@ -137,10 +137,11 @@
     background-color: #ffffff;
     padding: 2rem 0;
     gap: 0.5rem;
+    width: 100%;
   }
 
   .nav-list li {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     line-height: 2;
   }
@@ -159,6 +160,11 @@
     display: block;
     font-size: 2rem;
     margin-right: 1rem;
+  }
+
+  .cart-icon-number {
+    font-size: 12px;
+    padding: 4px 10px;
   }
 
   .collection-cards-container {

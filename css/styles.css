@@ -276,6 +276,8 @@ header {
 .cta-dark:hover {
   color: #113340;
   background-color: #3a606e0f;
+  background-color: #ffffff70;
+  background-color: #ffffff3f;
 }
 /****************************/
 /* SPECIFIC CSS */
