@@ -20,26 +20,10 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/queries.css" />
-    <title>Hemsedal | Rainydays</title>
-    <!-- Hotjar Tracking Code for MJ Rainydays  -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3670776, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <title></title>
   </head>
 
-  <body>
+  <body class="product-detail-body">
     <!-- SECTION: HEADER -->
 
     <header class="nav-container">
@@ -86,11 +70,15 @@
       <p>></p>
       <a href="../collection.html">Collection</a>
       <p>></p>
-      <p class="current-crumb">Hemsedal</p>
+      <p class="current-crumb"></p>
     </div>
 
     <!--  -->
     <main>
+      <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+
       <div class="product-info container">
         <div class="product-image-and-text">
           <img src="" alt="" class="product-img" id="product-img" />
@@ -103,9 +91,7 @@
             <p class="product-price text" id="product-price"></p>
           </div>
 
-          <button class="addToCart-btn" onclick="addToCart()">
-            Add to cart
-          </button>
+          <button class="addToCart-btn">Add to cart</button>
 
           <a href="../cart.html" class="viewCart-btn">View cart</a>
         </div>
@@ -140,6 +126,6 @@
       </div>
       <p class="copyright">&copy Rainydays 2022</p>
     </footer>
-    <script src="../js/displayDetails.js"></script>
+    <script src="js/displayDetails.js" type="module"></script>
   </body>
 </html>

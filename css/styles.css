@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /****************************/
@@ -178,6 +182,37 @@ header {
 }
 
 /****************************/
+/* LOADER */
+/****************************/
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3a606e;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/****************************/
 /* HEADINGS */
 /****************************/
 
@@ -279,6 +314,27 @@ header {
   background-color: #ffffff70;
   background-color: #ffffff3f;
 }
+
+/**********************************/
+/* ERROR MESSAGE */
+/**********************************/
+
+.error {
+  max-width: 75rem;
+
+  color: #113340;
+  background-color: #3a606e0f;
+
+  font-size: 2rem;
+  font-family: sans-serif;
+
+  border: 5px solid orangered;
+  border-radius: 20px;
+
+  padding: 2rem;
+  margin: 0 auto;
+}
+
 /****************************/
 /* SPECIFIC CSS */
 /****************************/
@@ -482,30 +538,6 @@ header {
   flex: 1;
 }
 
-/* .collection-hero {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 6rem;
-  height: 400px;
-  margin-top: 3rem;
-  margin-bottom: 6rem;
-} */
-
-/* .collection-hero-text-container {
-  flex: 1;
-  padding: 3rem;
-} */
-
-/* .collection-hero-img-container {
-  background-image: url(../images/collection-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex: 1;
-  border-radius: 6px;
-  width: 100%;
-  height: 400px;
-} */
-
 .collection-heading {
   text-align: center;
   margin-bottom: 3.5rem;
@@ -539,19 +571,6 @@ header {
   max-width: 100%;
   border-radius: 6px;
 }
-/* .about-img-container {
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 6px;
-} */
-
-/* .about-img-1 {
-  background-image: url(../images/about1.jpg);
-} */
-
-/* .about-img-2 {
-  background-image: url(../images/about2.jpg);
-} */
 
 /******************************************************/
 /* CONTACT PAGE */
@@ -664,72 +683,6 @@ header {
   font-size: 1.2rem;
 }
 
-/* .main-container {
-  margin-top: 6rem;
-}
-
-.contact-prim-heading {
-  margin-bottom: 5rem;
-}
-
-.contact-text {
-  margin-bottom: 2rem;
-}
-
-.contact-hours-container {
-  display: grid;
-  gap: 0.5rem;
-  margin-bottom: 4rem;
-  justify-content: center;
-}
-
-.contact-cta-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  margin-bottom: 8rem;
-}
-
-.contact-block {
-  flex: 1;
-}
-
-.contact-icon {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #113340;
-}
-
-.contact-info {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  color: #113340;
-}
-
-.contact-btn {
-  border: 2px solid #113340;
-  border-radius: 6px;
-  background-color: #e2ecf0;
-  padding: 1rem;
-  display: block;
-  text-align: center;
-}
-
-.contact-btn:link,
-.contact-btn:visited {
-  text-decoration: none;
-  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  color: #113340;
-}
-
-.contact-btn:hover,
-.contact-btn:active {
-  color: #fff;
-  background-color: #113340; 
-}
-  */
-
 /******************************************************/
 /* HEMSEDAL PAGE */
 /******************************************************/
@@ -755,9 +708,9 @@ header {
   border-radius: 16px;
 }
 
-.product-text {
+.product-image-and-text p {
   max-width: 500px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
 
