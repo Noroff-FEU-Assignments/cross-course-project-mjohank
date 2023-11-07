@@ -5,17 +5,21 @@ const featuredProductsContainer = document.querySelector(
 );
 const featuredURL =
   "https://cors.noroff.dev/https://rainydays.mjohank.no/wp-json/wc/store/products?featured=true&per_page=3";
+const loaderContainer = document.querySelector(".loader-container");
 
 async function fetchFeatured() {
   try {
     const response = await fetch(featuredURL);
     const featuredJSON = await response.json();
 
+    featuredProductsContainer.innerHTML = "";
+    loaderContainer.innerHTML = "";
+
     displayFeatured(featuredJSON);
   } catch (error) {
+    loaderContainer.innerHTML = "";
     featuredProductsContainer.innerHTML = errorMessage(
-      "An error ocurred while trying to fetch the products from the API",
-      error
+      "An error ocurred while trying to fetch the products from the API"
     );
   }
 }
