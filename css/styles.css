@@ -310,8 +310,8 @@ header {
 
 .cta-dark:hover {
   color: #113340;
-  background-color: #3a606e0f;
-  background-color: #ffffff70;
+  /* background-color: #3a606e0f;
+  background-color: #ffffff70; */
   background-color: #ffffff3f;
 }
 
@@ -323,11 +323,11 @@ header {
   max-width: 75rem;
 
   color: #113340;
-  background-color: #3a606e0f;
 
   font-size: 2rem;
   font-family: sans-serif;
 
+  background-color: #3a606e0f;
   border: 5px solid orangered;
   border-radius: 20px;
 
@@ -541,6 +541,26 @@ header {
 .collection-heading {
   text-align: center;
   margin-bottom: 3.5rem;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 3rem;
+}
+
+#collection-sorting,
+.sorting-label {
+  font-size: 1.2rem;
+  color: #113340;
+  background-color: #fff;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+#collection-sorting {
+  border: 2px solid #113340;
 }
 
 .collection-cards-container {

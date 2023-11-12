@@ -21,6 +21,22 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/queries.css" />
     <title>Collection | Rainydays</title>
+    <!-- Hotjar Tracking Code for MJ Rainydays  -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3670776, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
 
   <body>
@@ -84,17 +100,6 @@
       />
     </section>
 
-    <!-- <section class="collection-hero container-large">
-      <div class="collection-hero-text-container">
-        <p class="collection-hero-text text">
-          Whether you are looking to push your comfort zone on the snowy
-          mountains, paddling on your canoe or wander soullesly around the city
-          a dark and stormy night, we've got you covered.
-        </p>
-      </div>
-      <div class="collection-hero-img-container"></div>
-    </section> -->
-
     <!-- HEADING -->
 
     <h1 class="primary-heading collection-heading">Collection</h1>
@@ -102,101 +107,22 @@
     <!-- COLLECTION -->
 
     <section class="collection container">
+      <div class="sorting-container">
+        <!-- <label for="sorting" class="sorting-label">Sort</label> -->
+        <select name="sorting" id="collection-sorting">
+          <option selected>Sort by:</option>
+          <option value="low-to-high">Price (Low - High)</option>
+          <option value="high-to-low">Price (High - Low)</option>
+          <option value="a-to-z">Name (A - Z)</option>
+          <option value="z-to-a">Name (Z - A)</option>
+        </select>
+      </div>
+
       <div class="loader-container">
         <div class="loader"></div>
       </div>
 
-      <div class="collection-cards-container grid grid--3-col">
-        <!-- Below to be removed. Replaced with JS -->
-
-        <!-- <div class="product-card product-card-1">
-          <a href="products/Hemsedal.html" class="card-link">
-            <img
-              src="images/Hemsedal.jpg"
-              alt="picture of Hemsedal jacket"
-              class="card-img"
-            />
-            <div class="card-text-container">
-              <p class="jacket-name">Hemsedal</p>
-              <p class="price">NOK 799</p>
-            </div>
-          </a>
-        </div>
-
-
-        <div class="product-card product-card-2">
-          <a href="products/Hemsedal.html" class="card-link">
-            <img
-              src="images/Nidaros.jpg"
-              alt="picture of Nidaros jacket"
-              class="card-img"
-            />
-            <div class="card-text-container">
-              <p class="jacket-name">Nidaros</p>
-              <p class="price">NOK 699</p>
-            </div>
-          </a>
-        </div>
-
-
-        <div class="product-card product-card-3">
-          <a href="products/Hemsedal.html" class="card-link">
-            <img
-              src="images/Mjøsa.jpg"
-              alt="Picture of Mjøsa jacket"
-              class="card-img"
-            />
-            <div class="card-text-container">
-              <p class="jacket-name">Mjøsa</p>
-              <p class="price">NOK 899</p>
-            </div>
-          </a>
-        </div>
-
-
-        <div class="product-card product-card-4">
-          <a href="products/Hemsedal.html" class="card-link">
-            <img
-              src="images/Jostedalen.jpg"
-              alt="picture of Jostedalen jacket"
-              class="card-img"
-            />
-            <div class="card-text-container">
-              <p class="jacket-name">Jostedalen</p>
-              <p class="price">NOK 1199</p>
-            </div>
-          </a>
-        </div>
-
-
-        <div class="product-card product-card-5">
-          <a href="products/Hemsedal.html" class="card-link">
-            <img
-              src="images/Jostedalen.jpg"
-              alt="picture of Jostedalen jacket"
-              class="card-img"
-            />
-            <div class="card-text-container">
-              <p class="jacket-name">Jostedalen</p>
-              <p class="price">NOK 1199</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="product-card product-card-6">
-          <a href="products/Hemsedal.html" class="card-link">
-            <img
-              src="images/Jostedalen.jpg"
-              alt="picture of Jostedalen jacket"
-              class="card-img"
-            />
-            <div class="card-text-container">
-              <p class="jacket-name">Jostedalen</p>
-              <p class="price">NOK 1199</p>
-            </div>
-          </a>
-        </div> -->
-      </div>
+      <div class="collection-cards-container grid grid--3-col"></div>
     </section>
 
     <!-- SECTION: FOOTER -->
@@ -227,7 +153,6 @@
       </div>
       <p class="copyright">&copy Rainydays 2022</p>
     </footer>
-    <!-- <script src="js/components/productList.js"></script> -->
     <script src="js/collection.js" type="module"></script>
   </body>
 </html>
