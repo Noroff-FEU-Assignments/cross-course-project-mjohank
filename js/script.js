@@ -33,7 +33,7 @@ function displayFeatured(featuredProducts) {
             <a href="/product-details.html?id=${featuredProduct.id}" class="card-link">
               <img
                 src="${featuredProduct.images[0].src}"
-                alt="${featuredProduct.alt}"
+                alt="${featuredProduct.images[0].alt}"
                 class="card-img"
               />
               <div class="card-text-container">

@@ -132,6 +132,8 @@
     left: 0;
     align-items: center;
     background-color: #ffffff;
+    background-color: #3a606e;
+
     padding: 2rem 0;
     gap: 0.5rem;
     width: 100%;
@@ -290,3 +292,8 @@
     padding: 3rem;
   }
 }
+
+/* .sort-and-filter-container {
+  display: flex;
+  flex-direction: column;
+} */

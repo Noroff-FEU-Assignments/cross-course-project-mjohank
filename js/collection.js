@@ -3,6 +3,7 @@ import { errorMessage } from "./components/errorMessage.js";
 const productsContainer = document.querySelector(".collection-cards-container");
 const loaderContainer = document.querySelector(".loader-container");
 const sortingSelect = document.getElementById("collection-sorting");
+const filterSelect = document.getElementById("collection-filter");
 let productsData = []; // Array to store the fetched products (for sorting)
 
 const productsUrl =
@@ -16,6 +17,7 @@ async function fetchProducts() {
     const resultList = await response.json();
 
     productsData = resultList; // Updating the products array
+    // console.log(productsData);
 
     displayCollection();
   } catch (error) {
@@ -26,37 +28,12 @@ async function fetchProducts() {
   }
 }
 
-// ADDING SORTING FUNCTIONALITY
+// CREATING THE HTML TO DISPLAY THE PRODUCTS ON THE COLLECTION PAGE
 
-sortingSelect.addEventListener("change", function () {
-  const selectedSorting = sortingSelect.value;
-  sortProducts(selectedSorting);
-  displayCollection();
-});
-
-function sortProducts(sorting) {
-  switch (sorting) {
-    case "low-to-high":
-      productsData.sort((a, b) => a.prices.price - b.prices.price);
-      break;
-    case "high-to-low":
-      productsData.sort((a, b) => b.prices.price - a.prices.price);
-      break;
-    case "a-to-z":
-      productsData.sort((a, b) => (a.name > b.name ? 1 : -1));
-      break;
-    case "z-to-a":
-      productsData.sort((a, b) => (b.name > a.name ? 1 : -1));
-      break;
-  }
-}
-
-// CREATING THE HTML TO DISPLAY THE PRODUCTS IN THE COLLECTION
-
-function displayCollection() {
+function displayCollection(products = productsData) {
   productsContainer.innerHTML = "";
 
-  productsData.forEach((product) => {
+  products.forEach((product) => {
     loaderContainer.innerHTML = "";
 
     productsContainer.innerHTML += `
@@ -74,6 +51,65 @@ function displayCollection() {
       </a>
     </div>`;
   });
+}
+
+// ADDING SORTING FUNCTIONALITY
+
+/* sortingSelect.addEventListener("change", function () {
+  const selectedSorting = sortingSelect.value;
+  sortProducts(selectedSorting);
+  displayCollection();
+}); */
+
+const firstOption = document.querySelector(
+  "#collection-sorting option:first-child"
+);
+
+sortingSelect.addEventListener("change", function () {
+  const selectedSorting = sortingSelect.value;
+  sortProducts(selectedSorting);
+  firstOption.remove();
+  displayCollection();
+});
+
+function sortProducts(sorting) {
+  let arrayToSort = [...productsData];
+
+  switch (sorting) {
+    case "low-to-high":
+      arrayToSort.sort((a, b) => a.prices.price - b.prices.price);
+      break;
+    case "high-to-low":
+      arrayToSort.sort((a, b) => b.prices.price - a.prices.price);
+      break;
+    case "a-to-z":
+      arrayToSort.sort((a, b) => (a.name > b.name ? 1 : -1));
+      break;
+    case "z-to-a":
+      arrayToSort.sort((a, b) => (b.name > a.name ? 1 : -1));
+      break;
+  }
+  productsData = arrayToSort;
+}
+
+// ADDING FILTER FUNCTIONALITY
+
+filterSelect.addEventListener("change", function () {
+  const selectedCategory = filterSelect.value;
+  filterProducts(selectedCategory);
+});
+
+function filterProducts(category) {
+  let filteredProducts = [];
+
+  if (category === "all") {
+    filteredProducts = [...productsData];
+  } else {
+    filteredProducts = productsData.filter((product) =>
+      product.categories.some((cat) => cat.slug === category)
+    );
+  }
+  displayCollection(filteredProducts);
 }
 
 fetchProducts();
