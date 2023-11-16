@@ -55,20 +55,9 @@ function displayCollection(products = productsData) {
 
 // ADDING SORTING FUNCTIONALITY
 
-/* sortingSelect.addEventListener("change", function () {
-  const selectedSorting = sortingSelect.value;
-  sortProducts(selectedSorting);
-  displayCollection();
-}); */
-
-const firstOption = document.querySelector(
-  "#collection-sorting option:first-child"
-);
-
 sortingSelect.addEventListener("change", function () {
   const selectedSorting = sortingSelect.value;
   sortProducts(selectedSorting);
-  firstOption.remove();
   displayCollection();
 });
 

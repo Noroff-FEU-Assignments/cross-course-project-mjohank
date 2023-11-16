@@ -13,8 +13,6 @@ const detailsURL =
   "https://cors.noroff.dev/https://rainydays.mjohank.no/wp-json/wc/store/products/" +
   id;
 
-// console.log(detailsURL);
-
 async function displayDetails() {
   try {
     const response = await fetch(detailsURL);
@@ -29,11 +27,15 @@ async function displayDetails() {
   <div class="product-image-and-text">
           <img src="${json.images[0].src}" alt="${json.images[0].alt}" class="product-img" id="product-img" />
           <p class="product-text">${json.description}</p>
+
         </div>
 
         <div class="product-details">
-          <div class="detail-text">
+          <div class="detail-text">          
             <h1 class="primary-heading" id="product-name">${json.name}</h1>
+
+            <h2 class="category-heading">Category: ${json.categories[0].name}</h2>
+
             <p class="product-price text" id="product-price">NOK ${json.prices.price}</p>
           </div>
 
