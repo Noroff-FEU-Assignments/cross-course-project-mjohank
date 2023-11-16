@@ -17,7 +17,7 @@ async function displayDetails() {
   try {
     const response = await fetch(detailsURL);
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
 
     loaderContainer.innerHTML = "";
     pageTitle.innerHTML = `${json.name} | Rainydays`;
