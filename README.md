@@ -1,9 +1,10 @@
 
 # Rainydays, cross-course project
 
-[![Rainydays Homepage Screenshot](https://github.com/mjohank/Semester-Project-1/blob/main/resources/images/CSM-frontpage.jpg)]([https://soft-semifreddo-1d8f68.netlify.app/](https://rainydaysmj.netlify.app/))
+[![Rainydays Homepage screenshot](https://github.com/Noroff-FEU-Assignments/cross-course-project-mjohank/raw/main/images/Rainydays-screenshot.png)](https://rainydaysmj.netlify.app/)
 
-School project, full
+
+School project, fully functional website
 
 ## Description
 
