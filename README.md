@@ -31,7 +31,7 @@ The site consists of the following pages:
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/mjohank/Semester-Project-1.git
+git clone [https://github.com/mjohank/Semester-Project-1.git](https://github.com/Noroff-FEU-Assignments/cross-course-project-mjohank.git)
 ```
 
 2. Install the dependencies:
