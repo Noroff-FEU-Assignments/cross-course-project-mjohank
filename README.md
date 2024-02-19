@@ -7,8 +7,11 @@
 
 ## Description
 
-The assignment was to create a website for a fictional science museum, aimed primarily at school children ages 7-15 and families with children.
-The website was required to be informative, appealing and engaging whilst maintaining focus on responsive design and adhering to accessibility guidelines.
+The project spans across several subjects and takes form throughout several iterations:
+
+- First iteration (subject: html & css): Focus on design principles, semantic and neat HTML, DRY CSS, responsiveness and WCAG.
+- Second iteration (subject: Interaction design): Ensuring the website is user-centric, helping the users achieve their goals clearly and simply. Javascript introduced
+- Third iteration (subject: Content Management systems): Using the Wordpress REST API to manage products for the website.
 
 The site consists of the following pages:
 
@@ -55,5 +58,6 @@ Email: [mjohandev@gmail.com](mailto:mjohandev@gmail.com)
 
 
 ## Link to live site:
-https://soft-semifreddo-1d8f68.netlify.app/
+
+https://rainydaysmj.netlify.app/
 
