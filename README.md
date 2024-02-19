@@ -14,7 +14,7 @@ The project spans across several subjects and takes form throughout several iter
 - Second iteration (subject: Interaction design): Ensuring the website is user-centric, helping the users achieve their goals clearly and simply. Javascript introduced
   
 - Third iteration (subject: Content Management systems): Using the Wordpress REST API to manage products for the website.
-- 
+  
 
 The site consists of the following pages:
 
