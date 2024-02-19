@@ -23,6 +23,9 @@ The site consists of the following pages:
 - Homepage
 - Collection
 - Product specific
+- Cart
+- Checkout
+- Checkout success
 - About
 - Contact
 
