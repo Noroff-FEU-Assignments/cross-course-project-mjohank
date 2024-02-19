@@ -9,9 +9,12 @@
 
 The project spans across several subjects and takes form throughout several iterations:
 
-- First iteration (subject: html & css): Focus on design principles, semantic and neat HTML, DRY CSS, responsiveness and WCAG.
+- First iteration (subject: HTML & CSS): Focus on design principles, semantic and neat HTML, DRY CSS, responsiveness and WCAG.
+  
 - Second iteration (subject: Interaction design): Ensuring the website is user-centric, helping the users achieve their goals clearly and simply. Javascript introduced
+  
 - Third iteration (subject: Content Management systems): Using the Wordpress REST API to manage products for the website.
+- 
 
 The site consists of the following pages:
 
