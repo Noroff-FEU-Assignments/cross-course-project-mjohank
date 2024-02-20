@@ -4,7 +4,7 @@
 [![Rainydays Homepage screenshot](https://github.com/Noroff-FEU-Assignments/cross-course-project-mjohank/raw/main/images/Rainydays-screenshot.png)](https://rainydaysmj.netlify.app/)
 
 
-School project, fully functional website
+Cross-course school project: Build a website for an online shop selling rainjackets
 
 ## Description
 
