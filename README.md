@@ -1,5 +1,5 @@
 
-# Rainydays, cross-course project
+# Rainydays
 
 [![Rainydays Homepage screenshot](https://github.com/Noroff-FEU-Assignments/cross-course-project-mjohank/raw/main/images/Rainydays-screenshot.png)](https://rainydaysmj.netlify.app/)
 
