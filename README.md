@@ -12,13 +12,13 @@ Rainydays is a fictional online shop selling women's and men's rain jackets. The
 The result of the project is a fully functional, interactive website that is easy to manuevre, accessibility driven and engaging.
 The project is ongoing and takes form through several iterations, spanning across multiple courses, each with their own focus areas:
 
-- First iteration (course: Design): Focus on design principles. Creating a working prototype using Adobe XD, 
-- Second iteration (course: HTML & CSS): Semantic and neat HTML, DRY CSS, responsiveness and WCAG.  
-- Third iteration (course: Interaction design): Ensuring the website is user-centric, helping the users achieve their goals clearly and simply. Javascript introduced  
-- Fourth iteration (course: Content Management systems): Using the Wordpress REST API to manage products for the website.
+- **First iteration (course: Design):** Focus on design principles. Creating a working prototype using Adobe XD, 
+- **Second iteration (course: HTML & CSS):** Semantic and neat HTML, DRY CSS, responsiveness and WCAG.  
+- **Third iteration (course: Interaction design):** Ensuring the website is user-centric, helping the users achieve their goals clearly and simply. Javascript introduced  
+- **Fourth iteration (course: Content Management systems):** Using the Wordpress REST API to manage products for the website.
   
 
-The site consists of the following pages:
+**The site consists of the following pages:**
 
 - Homepage
 - Collection
